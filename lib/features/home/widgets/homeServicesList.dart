@@ -1,6 +1,7 @@
 import 'package:facility/features/home/views/moreScreen.dart';
 import 'package:facility/features/home/widgets/smallWidgets/Grid_itemServices.dart';
-import 'package:facility/features/home/widgets/smallWidgets/tasareeh.dart';
+import 'package:facility/features/tasareeh/presentation/views/widgets/durationEntry.dart';
+import 'package:facility/features/tasareeh/presentation/views/widgets/tasareeh.dart';
 import 'package:facility/features/services_home/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -19,7 +20,7 @@ class HomeServiceList extends StatelessWidget {
      const MoreScreen(),
      const MoreScreen(),
      const ReviewPage(),
-     Tasareeh_View(),
+     DurationEntry(),
      const MoreScreen(),
      const MoreScreen(),
    ];

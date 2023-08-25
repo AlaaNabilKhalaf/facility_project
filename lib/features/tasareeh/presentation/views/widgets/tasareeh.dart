@@ -1,16 +1,16 @@
 
 import 'package:date_picker_timeline/date_picker_widget.dart';
-import 'package:facility/features/home/widgets/smallWidgets/tasareehSuccess.dart';
+import 'package:facility/features/tasareeh/presentation/views/widgets/tasareehSuccess.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
 
-import '../../../../constants.dart';
-import '../../../../core/shared_widgets/appbar2.dart';
-import '../../../../core/shared_widgets/custom_buttom.dart';
-import '../../../../core/shared_widgets/text_field.dart';
-import '../../../../core/utilies/styles.dart';
+import '../../../../../constants.dart';
+import '../../../../../core/shared_widgets/appbar2.dart';
+import '../../../../../core/shared_widgets/custom_buttom.dart';
+import '../../../../../core/shared_widgets/text_field.dart';
+import '../../../../../core/utilies/styles.dart';
 
 class Tasareeh_View extends StatefulWidget {
 
