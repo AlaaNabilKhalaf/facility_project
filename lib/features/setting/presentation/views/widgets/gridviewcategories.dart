@@ -21,19 +21,19 @@ class Grid_View_Categories extends StatelessWidget {
 return
     Padding(
         padding: const EdgeInsets.symmetric(vertical: 16.0,horizontal: 8),
-     child: FadeAnimation(4,child: GridView.builder(
-    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-    crossAxisCount: 2,
-             ),
-    itemCount: 7,
-    itemBuilder: (context , index)=>Padding(
-    padding: const EdgeInsets.all(8.0),
-    child: GestureDetector(
-        onTap: (){
-          Navigator.push(context, MaterialPageRoute(builder: (context)=>screens[index]));
-        },
-        child: GridItemSetting(index: index,))
-    )),)
+     child: GridView.builder(
+         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+           crossAxisCount: 2,
+         ),
+         itemCount: 7,
+         itemBuilder: (context , index)=>Padding(
+             padding: const EdgeInsets.all(8.0),
+             child: GestureDetector(
+                 onTap: (){
+                   Navigator.push(context, MaterialPageRoute(builder: (context)=>screens[index]));
+                 },
+                 child: GridItemSetting(index: index,))
+         )),
     );
   }
 }

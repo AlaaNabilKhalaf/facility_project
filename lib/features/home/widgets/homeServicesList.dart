@@ -27,7 +27,7 @@ class HomeServiceList extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Padding(
         padding: const EdgeInsets.symmetric(vertical: 15.0,horizontal: 10),
-        child: FadeAnimation(1,child: SizedBox(
+        child: SizedBox(
           height: 510.h,
           child: GridView.builder(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -36,15 +36,15 @@ class HomeServiceList extends StatelessWidget {
               itemCount:10 ,
               itemBuilder: (context , index)=>
                   Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: GestureDetector(
-                      onTap: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>nextScreen[index])
-                        );
-                      },
-                      child: Grid_Item_Services(index: index,))
-              )),
-        ),)
+                      padding: const EdgeInsets.all(8.0),
+                      child: GestureDetector(
+                          onTap: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>nextScreen[index])
+                            );
+                          },
+                          child: Grid_Item_Services(index: index,))
+                  )),
+        ),
     );
   }
 }
