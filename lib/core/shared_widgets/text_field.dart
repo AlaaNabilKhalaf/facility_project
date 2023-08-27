@@ -18,10 +18,12 @@ void Function()?  onTab,
   double?borderWidth,
   int?maxLines,
 }) => TextFormField(
+
   minLines: maxLines,
   enabled: enable,
   controller: controller,
   obscureText: isObscure,
+
   decoration:  InputDecoration(
     hintText: hint,
     prefixIcon: prefixImageAsset != null // Use prefixImageAsset to conditionally show the image
@@ -54,6 +56,7 @@ void Function()?  onTab,
           
         )
       )
+
   ),
   keyboardType: type,
   onChanged: onChange,
