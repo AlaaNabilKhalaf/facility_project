@@ -4,7 +4,7 @@ import '../../../../../core/shared_widgets/custom_buttom.dart';
 import '../../../../../core/utilies/styles.dart';
 
 class ImageStack extends StatelessWidget {
-  const ImageStack({Key? key}) : super(key: key);
+  const ImageStack({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class ImageStack extends StatelessWidget {
                   'Total Balance',
                 style: Styles.textStyle22.copyWith(fontSize: 13 , color: Colors.white),
               ),
-              SizedBox(height: 5,),
+              const SizedBox(height: 5,),
               Text(
                 '14,234.00 EGP',
                 style: Styles.textStyle20.copyWith(color: Colors.white),

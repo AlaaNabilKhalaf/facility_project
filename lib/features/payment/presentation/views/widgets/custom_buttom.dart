@@ -10,12 +10,12 @@ class CustomImageButton extends StatelessWidget {
   final VoidCallback onTap;
 
   const CustomImageButton({
-    Key? key,
+    super.key,
     required this.text,
     required this.imagePath,
     required this.isSelected,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

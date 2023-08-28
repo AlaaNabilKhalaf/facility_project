@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'grid_item.dart';
 class ServicesBody extends StatelessWidget {
-  const ServicesBody({Key? key}) : super(key: key);
+  const ServicesBody({super.key});
 
   @override
   Widget build(BuildContext context) {

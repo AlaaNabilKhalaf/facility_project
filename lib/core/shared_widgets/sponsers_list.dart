@@ -5,7 +5,7 @@ class SponsersList extends StatelessWidget {
 
   final double? width;
   final double? height;
-  const SponsersList({Key? key,  this.width,  this.height}) : super(key: key);
+  const SponsersList({super.key,  this.width,  this.height});
 
   @override
   Widget build(BuildContext context) {

@@ -7,7 +7,7 @@ import '../../../../../core/shared_widgets/custom_buttom.dart';
 import '../success_view.dart';
 
 class ChatBody extends StatefulWidget {
-  const ChatBody({Key? key}) : super(key: key);
+  const ChatBody({super.key});
 
   @override
   State<ChatBody> createState() => _ChatBodyState();
@@ -21,7 +21,7 @@ class _ChatBodyState extends State<ChatBody> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Expanded(child: ChatStack()),
+          const Expanded(child: ChatStack()),
           SizedBox(
             height: MediaQuery.of(context).size.height/14,
           ),
@@ -32,7 +32,7 @@ class _ChatBodyState extends State<ChatBody> {
               func: (){
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => ChatSuccess()),
+                  MaterialPageRoute(builder: (context) => const ChatSuccess()),
                 );
               }
           ),

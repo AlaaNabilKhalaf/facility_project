@@ -1,5 +1,4 @@
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -9,7 +8,7 @@ import '../../../../../core/shared_widgets/custom_buttom.dart';
 import '../new_gate.dart';
 
 class Fully_Gate_Notification extends StatelessWidget {
-Fully_Gate_Notification({required this.name,required this.date,required this.details, required this.service});
+const Fully_Gate_Notification({super.key, required this.name,required this.date,required this.details, required this.service});
 
 final String name;
 final String date;
@@ -37,8 +36,8 @@ final String details;
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    ContainerRowNotif(name: name, date: date,widget: Text(date,style: TextStyle(color: LIGHT_GREY),),),
-                    ContainerRowNotif(name: service, date: date,widget: Icon(Icons.delete,color: Colors.red,),),
+                    ContainerRowNotif(name: name, date: date,widget: Text(date,style: const TextStyle(color: LIGHT_GREY),),),
+                    ContainerRowNotif(name: service, date: date,widget: const Icon(Icons.delete,color: Colors.red,),),
                     Padding(
                       padding: const EdgeInsets.all(10.0),
                       child: Text(details),
@@ -48,12 +47,12 @@ final String details;
                 )
               ),
            ),
-           Spacer(),
+           const Spacer(),
            Padding(
              padding: const EdgeInsets.only(bottom: 30,right: 10,left: 10),
              child: CustomButton(backgroundColor: kPrimaryColor, text: "Create New Gate notification",
                  func: (){
-               Navigator.push(context, MaterialPageRoute(builder: (context)=>New_Gate()));
+               Navigator.push(context, MaterialPageRoute(builder: (context)=>const New_Gate()));
 }, width: double.infinity,height: 55.h,),
            )
 

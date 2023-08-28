@@ -7,7 +7,7 @@ import '../../../../../core/shared_widgets/custom_buttom.dart';
 import '../../../../../core/utilies/styles.dart';
 import '../../data.dart';
 class LastBoarding extends StatelessWidget {
-  const LastBoarding({Key? key}) : super(key: key);
+  const LastBoarding({super.key});
 
   @override
   Widget build(BuildContext context) {

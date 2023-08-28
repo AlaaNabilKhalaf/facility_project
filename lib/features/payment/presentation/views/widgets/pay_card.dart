@@ -9,7 +9,7 @@ import '../../../../../core/utilies/assets.dart';
 import '../../../../../core/utilies/styles.dart';
 
 class PayCard extends StatefulWidget {
-  const PayCard({Key? key}) : super(key: key);
+  const PayCard({super.key});
 
   @override
   State<PayCard> createState() => _PayCardState();
@@ -27,17 +27,17 @@ class _PayCardState extends State<PayCard> {
               'Add new card',
             style: Styles.textStyle15.copyWith(fontSize: 18 , color: Colors.black),
           ),
-          SizedBox(height: 50,),
+          const SizedBox(height: 50,),
           Text(
             'Card Number',
             style: Styles.textStyle22.copyWith(fontSize: 12),
           ),
-          SizedBox(height: 8,),
+          const SizedBox(height: 8,),
           defaultText(
               type: TextInputType.text,
             prefixImageAsset: AssetData.penIcon,
           ),
-          SizedBox(height: 8,),
+          const SizedBox(height: 8,),
           Row(
             children: [
               Expanded(
@@ -48,7 +48,7 @@ class _PayCardState extends State<PayCard> {
                       'Expire date',
                       style: Styles.textStyle22.copyWith(fontSize: 12),
                     ),
-                    SizedBox(height: 5,),
+                    const SizedBox(height: 5,),
                     SizedBox(
                       width: 250,
                       child: TextField(
@@ -71,7 +71,7 @@ class _PayCardState extends State<PayCard> {
                       'CVV',
                       style: Styles.textStyle22.copyWith(fontSize: 12),
                     ),
-                    SizedBox(height: 5,),
+                    const SizedBox(height: 5,),
                     SizedBox(
                       width: 250,
                       child: TextField(
@@ -93,15 +93,15 @@ class _PayCardState extends State<PayCard> {
               'Cardholder name',
             style: Styles.textStyle22.copyWith(fontSize: 12),
           ),
-          SizedBox(height: 8,),
+          const SizedBox(height: 8,),
           defaultText(
             type: TextInputType.text,
           ),
-          SizedBox(height: 14,),
-          CheckButtom(
+          const SizedBox(height: 14,),
+          const CheckButtom(
             text: 'Save card for future payment',
           ),
-        SizedBox(height: 50,),
+        const SizedBox(height: 50,),
           CustomButton(
             width: MediaQuery.of(context).size.width*.7,
               backgroundColor: kPrimaryColor,

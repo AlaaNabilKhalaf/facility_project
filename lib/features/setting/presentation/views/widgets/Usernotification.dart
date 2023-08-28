@@ -2,16 +2,16 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:page_transition/page_transition.dart';
 
 import '../../../../../constants.dart';
 import '../../../../../core/shared_widgets/custom_buttom.dart';
 import '../new_gate.dart';
-import 'fully_gate_notification.dart';
 
 class EmptyNotificationListView extends StatelessWidget {
+  const EmptyNotificationListView({super.key});
+
   @override
 
   Widget build(BuildContext context) {
@@ -33,8 +33,8 @@ class EmptyNotificationListView extends StatelessWidget {
             height: 55.h,
             backgroundColor: kPrimaryColor, text: 'Create New Gate Notification ', func: () {
             Navigator.push(context,
-                PageTransition(child: New_Gate(),
-                    type: PageTransitionType.topToBottom,duration: Duration(seconds: 1))
+                PageTransition(child: const New_Gate(),
+                    type: PageTransitionType.topToBottom,duration: const Duration(seconds: 1))
 
 /////
             );

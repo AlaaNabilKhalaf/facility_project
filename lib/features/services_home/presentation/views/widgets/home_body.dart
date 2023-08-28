@@ -9,7 +9,7 @@ import 'image_stack.dart';
 import 'list_myflat.dart';
 
 class HomeBody extends StatefulWidget {
-  const HomeBody({Key? key}) : super(key: key);
+  const HomeBody({super.key});
 
   @override
   State<HomeBody> createState() => _HomeBodyState();
@@ -19,7 +19,7 @@ class _HomeBodyState extends State<HomeBody> {
   @override
   Widget build(BuildContext context) {
     return CustomScrollView(
-      physics: BouncingScrollPhysics(),
+      physics: const BouncingScrollPhysics(),
       slivers: [
         SliverToBoxAdapter(
        child: Padding(
@@ -27,55 +27,55 @@ class _HomeBodyState extends State<HomeBody> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children:  [
-              Search(
+              const Search(
                 text: 'Search for service, offer',
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
-              ImageStack(),
-              SizedBox(
+              const ImageStack(),
+              const SizedBox(
                 height: 30,
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 30),
+                padding: const EdgeInsets.symmetric(horizontal: 30),
                 child: Text(
                   'My Flats',
                   style: Styles.textStyle15.copyWith(fontSize: 16, color: Colors.black),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               ListFlat(),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 30),
+                padding: const EdgeInsets.symmetric(horizontal: 30),
                 child: Text(
                   'Our Services',
                   style: Styles.textStyle15.copyWith(fontSize: 16 , color: Colors.black),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               ServiceList(),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 30),
+                padding: const EdgeInsets.symmetric(horizontal: 30),
                 child: Text(
                   'Our Sponsors',
                   style: Styles.textStyle15.copyWith(fontSize: 16 , color: Colors.black),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 30),
                 child: AspectRatio(
                   aspectRatio: 2.3/1,

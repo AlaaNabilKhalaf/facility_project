@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../utilies/styles.dart';
 
 class RadioCheck extends StatefulWidget {
-  const RadioCheck({Key? key}) : super(key: key);
+  const RadioCheck({super.key});
 
   @override
   State<RadioCheck> createState() => _RadioCheckState();
@@ -17,7 +17,7 @@ class _RadioCheckState extends State<RadioCheck> {
     return Row(
       children: [
         Container(
-         padding: EdgeInsets.symmetric(vertical: 10 , horizontal: 20),
+         padding: const EdgeInsets.symmetric(vertical: 10 , horizontal: 20),
           decoration: BoxDecoration(
             shape: BoxShape.rectangle,
             border: Border.all(
@@ -38,7 +38,7 @@ class _RadioCheckState extends State<RadioCheck> {
                   });
                 },
               ),
-              SizedBox(width: 5,),
+              const SizedBox(width: 5,),
               Text(
                 'Male',
                 style: Styles.textStyle22.copyWith(fontSize: 14),
@@ -46,9 +46,9 @@ class _RadioCheckState extends State<RadioCheck> {
             ],
           ),
         ),
-        SizedBox(width: 20,),
+        const SizedBox(width: 20,),
         Container(
-          padding: EdgeInsets.symmetric(vertical: 10 , horizontal: 20),
+          padding: const EdgeInsets.symmetric(vertical: 10 , horizontal: 20),
           decoration: BoxDecoration(
             shape: BoxShape.rectangle,
             border: Border.all(
@@ -69,7 +69,7 @@ class _RadioCheckState extends State<RadioCheck> {
                   });
                 },
               ),
-              SizedBox(width: 5,),
+              const SizedBox(width: 5,),
               Text(
                 'Female',
                 style: Styles.textStyle22.copyWith(fontSize: 14),

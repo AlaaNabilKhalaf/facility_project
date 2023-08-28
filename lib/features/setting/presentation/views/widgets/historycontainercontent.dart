@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
 class History_Container_Content extends StatelessWidget {
-  History_Container_Content({required this.Firstwidget,required this.Secondwidget});
+  History_Container_Content({super.key, required this.Firstwidget,required this.Secondwidget});
   Widget Firstwidget;
   Widget Secondwidget;
 

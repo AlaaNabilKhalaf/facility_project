@@ -1,5 +1,4 @@
 import 'package:facility/core/shared_widgets/appbar2.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -8,7 +7,7 @@ import '../../../../../core/shared_widgets/custom_buttom.dart';
 import '../../../../home/views/homePage.dart';
 
 class ConfirmData extends StatelessWidget {
-  const ConfirmData({Key? key}) : super(key: key);
+  const ConfirmData({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +35,7 @@ class ConfirmData extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text("Your Request sent Successfully",style:TextStyle(fontSize: 17,fontWeight: FontWeight.w600),),
+                        const Text("Your Request sent Successfully",style:TextStyle(fontSize: 17,fontWeight: FontWeight.w600),),
                         SizedBox(height: 15.h,),
                         Text("Your QR will be sent to your\n         whatsApp soon",style:TextStyle(fontSize: 15.sp),)
                       ],
@@ -61,11 +60,11 @@ class ConfirmData extends StatelessWidget {
                   ),
                 ],
               ),
-              Spacer(),
+              const Spacer(),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10),
                 child: CustomButton(backgroundColor: kPrimaryColor, text:"Back To Home", func: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>const HomePage()));
                 }, width: double.infinity,height: 55.h,),
               )
 

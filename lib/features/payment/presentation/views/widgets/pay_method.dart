@@ -7,7 +7,7 @@ import 'custom_buttom.dart';
 
 
 class buildExpandedButtons extends StatefulWidget {
-  const buildExpandedButtons({Key? key}) : super(key: key);
+  const buildExpandedButtons({super.key});
 
   @override
   State<buildExpandedButtons> createState() => _buildExpandedButtonsState();

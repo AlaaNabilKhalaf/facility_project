@@ -8,7 +8,7 @@ class HomeItem extends StatelessWidget {
 
   final String text;
   final ImageProvider<Object> imagePath;
-  const HomeItem({Key? key, required this.text, required this.imagePath , required this.num}) : super(key: key);
+  const HomeItem({super.key, required this.text, required this.imagePath , required this.num});
 final double num ;
   @override
   Widget build(BuildContext context) {

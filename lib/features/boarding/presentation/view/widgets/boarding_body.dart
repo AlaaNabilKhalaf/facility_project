@@ -7,7 +7,7 @@ import 'item_builder.dart';
 import 'last_boarding.dart';
 
 class BoardingBody extends StatefulWidget {
-  BoardingBody({Key? key}) : super(key: key);
+  const BoardingBody({super.key});
 
   @override
   State<BoardingBody> createState() => _BoardingBodyState();
@@ -26,7 +26,7 @@ class _BoardingBodyState extends State<BoardingBody> {
         ? Container(
             height: double.infinity,
             width: double.infinity,
-            padding: EdgeInsets.all(15),
+            padding: const EdgeInsets.all(15),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -37,8 +37,8 @@ class _BoardingBodyState extends State<BoardingBody> {
                     onTap: () {
                       // Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>RegisterScreen()));
                     },
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                    child: const Padding(
+                      padding: EdgeInsets.all(8.0),
                       child: Text(
                         "Skip",
                         style: TextStyle(color: LIGHT_GREY, fontSize: 15),
@@ -49,7 +49,7 @@ class _BoardingBodyState extends State<BoardingBody> {
                 Expanded(
                   child: Container(
                     // color: Colors.grey,
-                    margin: EdgeInsets.symmetric(vertical: 12.5),
+                    margin: const EdgeInsets.symmetric(vertical: 12.5),
                     child: PageView.builder(
                       controller: pageController,
                       itemCount: 3,
@@ -103,7 +103,7 @@ class _BoardingBodyState extends State<BoardingBody> {
                         child: CircleAvatar(
                           radius: MediaQuery.of(context).size.width / 14,
                           backgroundColor: kPrimaryColor,
-                          child: Icon(
+                          child: const Icon(
                             Icons.arrow_forward_ios,
                             color: Colors.white,
                           ),
@@ -115,6 +115,6 @@ class _BoardingBodyState extends State<BoardingBody> {
               ],
             ),
           )
-        : LastBoarding();
+        : const LastBoarding();
   }
 }

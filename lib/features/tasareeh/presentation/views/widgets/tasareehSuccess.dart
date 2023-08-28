@@ -1,15 +1,13 @@
 import 'package:facility/constants.dart';
 import 'package:facility/core/shared_widgets/appbar2.dart';
 import 'package:facility/core/shared_widgets/custom_buttom.dart';
-import 'package:facility/core/utilies/styles.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../home/views/homePage.dart';
 
 class Tasreeh_Success extends StatelessWidget {
-  const Tasreeh_Success({Key? key}) : super(key: key);
+  const Tasreeh_Success({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +35,7 @@ class Tasreeh_Success extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Your Request sent Successfully",style:TextStyle(fontSize: 17,fontWeight: FontWeight.w600),),
+                  const Text("Your Request sent Successfully",style:TextStyle(fontSize: 17,fontWeight: FontWeight.w600),),
                   SizedBox(height: 15.h,),
                   Text("Your QR will be sent to your\n         whatsApp soon",style:TextStyle(fontSize: 15.sp),)
                 ],
@@ -62,11 +60,11 @@ class Tasreeh_Success extends StatelessWidget {
             ),
           ],
       ),
-              Spacer(),
+              const Spacer(),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10),
                 child: CustomButton(backgroundColor: kPrimaryColor, text:"Back To Home", func: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>const HomePage()));
                 }, width: double.infinity,height: 55.h,),
               )
 

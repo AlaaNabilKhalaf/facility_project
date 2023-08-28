@@ -5,7 +5,7 @@ import 'list_model.dart';
 
 
 class ListFlat extends StatelessWidget {
-   ListFlat({Key? key}) : super(key: key);
+   ListFlat({super.key});
 
   final List<ListItemModel> items = [
     ListItemModel(text: "Rehab", imagePath: "assets/images/my_flat/flat.png"  ),
@@ -24,7 +24,7 @@ class ListFlat extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
                     return  Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 10),
+                      padding: const EdgeInsets.symmetric(horizontal: 10),
                       child: HomeItem(
                         num: 2.8,
                         imagePath: AssetImage(items[index].imagePath) ,

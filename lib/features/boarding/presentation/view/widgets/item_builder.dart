@@ -6,7 +6,7 @@ import '../../../../../core/utilies/styles.dart';
 import '../../data.dart';
 class ItemBuilder extends StatelessWidget {
   int index=0;
-   ItemBuilder({Key? key , required this.index} ) : super(key: key);
+   ItemBuilder({super.key , required this.index} );
 
   @override
   Widget build(BuildContext context) {

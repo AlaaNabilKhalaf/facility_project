@@ -1,7 +1,5 @@
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
 import 'package:page_transition/page_transition.dart';
@@ -9,11 +7,12 @@ import 'package:page_transition/page_transition.dart';
 import '../../../../../constants.dart';
 import '../../../../../core/shared_widgets/custom_buttom.dart';
 import '../../../../../core/shared_widgets/text_field.dart';
-import '../new_gate.dart';
 import 'fully_gate_notification.dart';
 import 'inputNewGate.dart';
 
 class Create_New_Gate extends StatefulWidget {
+  const Create_New_Gate({super.key});
+
 
   @override
   State<Create_New_Gate> createState() => _Create_New_GateState();
@@ -73,7 +72,7 @@ var detailsController=TextEditingController();
                 details: detailsController.text, service: serviceProviderController.text,
 
               ),
-                  type: PageTransitionType.topToBottom,duration: Duration(seconds: 1)));
+                  type: PageTransitionType.topToBottom,duration: const Duration(seconds: 1)));
             }, width: double.infinity,height: 55.h,),
         )
       ],

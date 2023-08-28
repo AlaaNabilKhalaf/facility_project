@@ -8,7 +8,7 @@ class AppBarButtom2 extends StatefulWidget  implements PreferredSizeWidget {
 
   final String text;
   Widget? columnText;
-   AppBarButtom2({Key? key, required this.text,this.columnText}) : super(key: key);
+   AppBarButtom2({super.key, required this.text,this.columnText});
 
   @override
   State<AppBarButtom2> createState() => _AppBarButtom2State();
@@ -22,7 +22,7 @@ class _AppBarButtom2State extends State<AppBarButtom2> {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      leading: SizedBox(),
+      leading: const SizedBox(),
       elevation: 0,
       backgroundColor: Colors.transparent,
       flexibleSpace: Padding(
@@ -73,7 +73,7 @@ class _AppBarButtom2State extends State<AppBarButtom2> {
                         color: Colors.grey.withOpacity(0.2), // Set the shadow color
                         spreadRadius: 2, // Set the spread radius of the shadow
                         blurRadius: 6, // Set the blur radius of the shadow
-                        offset: Offset(0, 3), // Set the offset of the shadow
+                        offset: const Offset(0, 3), // Set the offset of the shadow
                       ),
                     ],
                   ),

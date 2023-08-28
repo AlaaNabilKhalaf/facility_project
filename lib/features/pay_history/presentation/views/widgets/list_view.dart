@@ -6,7 +6,7 @@ import '../../../../services_home/presentation/views/widgets/list_model.dart';
 
 
 class ListHistory extends StatelessWidget {
-  ListHistory({Key? key}) : super(key: key);
+  ListHistory({super.key});
 
   final List<ListItemModel> items = [
     ListItemModel(text: "Water", imagePath: "assets/images/Icon ionic-ios-water.png",  ),
@@ -28,7 +28,7 @@ class ListHistory extends StatelessWidget {
               itemCount: 4,
               itemBuilder: (context, index) {
                 return  Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: HomeItem(
                     num: 2.8,
                     imagePath: AssetImage(items[index].imagePath) ,

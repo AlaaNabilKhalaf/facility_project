@@ -5,7 +5,7 @@ import '../../../../../core/utilies/assets.dart';
 import 'home_item.dart';
 
 class GridItemSetting extends StatelessWidget {
-  GridItemSetting({Key? key , required this.index}) : super(key: key);
+  GridItemSetting({super.key , required this.index});
   int index=0;
   @override
   Widget build(BuildContext context) {

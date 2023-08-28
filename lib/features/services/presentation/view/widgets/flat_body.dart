@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import '../../../../../core/shared_widgets/sponsers_list.dart';
 import '../../../../../core/utilies/styles.dart';
 class FlatBody extends StatelessWidget {
-  const FlatBody({Key? key}) : super(key: key);
+  const FlatBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,20 +14,20 @@ class FlatBody extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
+          const Text(
             "Our Services",
             style: Styles.textStyle16,
           ),
           SizedBox(
               height: MediaQuery.of(context).size.height * .4,
-              child: ServicesBody()),
-          Text(
+              child: const ServicesBody()),
+          const Text(
             "Our Sponsers",
             style: Styles.textStyle16,
           ),
           SizedBox(
               height: MediaQuery.of(context).size.height / 9,
-              child: SponsersList(),
+              child: const SponsersList(),
           ),
         ],
       ),

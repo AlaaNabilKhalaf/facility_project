@@ -1,14 +1,13 @@
 
 import 'package:facility/features/setting/presentation/views/widgets/History_Details_body.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/shared_widgets/appbar2.dart';
-import '../../../../core/shared_widgets/text_field.dart';
 
 class History_Details extends StatelessWidget {
 var inputController=TextEditingController();
+
+  History_Details({super.key});
   @override
   Widget build(BuildContext context) {
     return SafeArea(

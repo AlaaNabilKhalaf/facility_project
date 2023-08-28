@@ -4,7 +4,7 @@ import '../../../../../constants.dart';
 import '../../../../../core/utilies/styles.dart';
 
 class StackChat extends StatelessWidget {
-  const StackChat({Key? key}) : super(key: key);
+  const StackChat({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class StackChat extends StatelessWidget {
                 Text('Your inquire was sent successfully!',
                 style: Styles.textStyle16.copyWith(fontSize: 18),
                 ),
-            SizedBox(height: 5,),
+            const SizedBox(height: 5,),
             const Center(
                 child: Text(
                   'Thank you',

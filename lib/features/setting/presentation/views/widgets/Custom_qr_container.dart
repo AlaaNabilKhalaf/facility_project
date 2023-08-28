@@ -4,13 +4,13 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../constants.dart';
 
 class Custom_QR_Container extends StatelessWidget {
-  Custom_QR_Container({required this.txt});
+  Custom_QR_Container({super.key, required this.txt});
 
   String ? txt;
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(15),
+      padding: const EdgeInsets.all(15),
       alignment: Alignment.centerLeft,
       height: 50.h,
       decoration: BoxDecoration(

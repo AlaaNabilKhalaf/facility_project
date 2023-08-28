@@ -3,7 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Search extends StatelessWidget {
   final String text;
-  const Search({Key? key, required this.text}) : super(key: key);
+  const Search({super.key, required this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class Search extends StatelessWidget {
               color: Colors.grey.withOpacity(0.5), // Set the shadow color
               spreadRadius: 2, // Set the spread radius of the shadow
               blurRadius: 6, // Set the blur radius of the shadow
-              offset: Offset(0, 3), // Set the offset of the shadow
+              offset: const Offset(0, 3), // Set the offset of the shadow
             ),
           ],
         ),

@@ -1,7 +1,5 @@
 
 import 'package:facility/features/home/views/homePage.dart';
-import 'package:facility/features/setting/presentation/views/setting_view.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -23,7 +21,7 @@ class History_Details_Body extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        History_Request_Container(),
+        const History_Request_Container(),
         Padding(
           padding: const EdgeInsets.all(10.0),
           child: defaultText(
@@ -82,7 +80,7 @@ class Confirm_Button extends StatelessWidget {
     onTap:(){
       showDialog(context: context, builder: (context)=>
       AlertDialog(
-          content: Container(
+          content: SizedBox(
             height: 200.h,
             width: double.infinity,
             child: Column(
@@ -94,7 +92,7 @@ class Confirm_Button extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
                   child: CustomButton(backgroundColor: kPrimaryColor, text: "Go To Home",
                       func: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>const HomePage()
 
                     ));
                       }, width: double.infinity),

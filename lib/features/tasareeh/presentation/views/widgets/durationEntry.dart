@@ -4,13 +4,14 @@ import 'package:facility/core/shared_widgets/custom_buttom.dart';
 import 'package:facility/core/utilies/styles.dart';
 import 'package:facility/features/tasareeh/presentation/views/widgets/DateRangeContainer.dart';
 import 'package:facility/features/tasareeh/presentation/views/widgets/payWay.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'chooseMorning.dart';
 import 'choosetime.dart';
 
 class DurationEntry extends StatefulWidget {
+  const DurationEntry({super.key});
+
 
   @override
   State<DurationEntry> createState() => _DurationEntryState();
@@ -30,7 +31,7 @@ class _DurationEntryState extends State<DurationEntry> {
               SizedBox(height: 20.h,),
               const Text('Please enter the duration of the workers stay',style: Styles.textStyle16,),
               SizedBox(height: 20.h,),
-              DateRangeContainer(),
+              const DateRangeContainer(),
               SizedBox(height: 20.h,),
               Container(
                 padding: const EdgeInsets.all(10),
@@ -40,21 +41,21 @@ class _DurationEntryState extends State<DurationEntry> {
                 children: [
                   const Text('Choose Time from'),
                   SizedBox(height: 10.h,),
-                  ChooseMorning(),
+                  const ChooseMorning(),
                   SizedBox(height: 10.h,),
-                  ChooseTime(),
+                  const ChooseTime(),
                   SizedBox(height: 20.h,),
-                  Text('To'),
+                  const Text('To'),
                   SizedBox(height: 10.h,),
-                  ChooseMorning(),
-                  ChooseTime()
+                  const ChooseMorning(),
+                  const ChooseTime()
 
                 ],
               ),
               ),
               SizedBox(height: 20.h,),
               CustomButton(backgroundColor: kPrimaryColor, text: 'Next', func: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>PayWay()));
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>const PayWay()));
               }, width: double.infinity)            ],
           ),
         ),

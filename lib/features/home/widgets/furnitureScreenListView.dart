@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../constants.dart';
 import '../views/la_z_boyScreen.dart';
 
 
 
 class FurnitureScreenListview extends StatelessWidget {
-  const FurnitureScreenListview({Key? key,
+  const FurnitureScreenListview({super.key,
     required this.textOne,
     required this.bottomWidget,
     required this.images,
     required this.topWidget,
 
-  }) : super(key: key);
+  });
   final Widget topWidget ;
   final List<String> textOne ;
   final List<String> images ;

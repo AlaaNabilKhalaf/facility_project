@@ -5,7 +5,7 @@ import '../../../../../constants.dart';
 import '../../../../../core/utilies/styles.dart';
 
 class VerifyOtp extends StatefulWidget {
-  const VerifyOtp({Key? key}) : super(key: key);
+  const VerifyOtp({super.key});
 
   @override
   State<VerifyOtp> createState() => _VerifyOtpState();
@@ -97,7 +97,7 @@ class _VerifyOtpState extends State<VerifyOtp> {
                 ),
                 focusedBorder: OutlineInputBorder( // Add focused border style
                   borderRadius: BorderRadius.circular(5),
-                  borderSide: BorderSide(color: kPrimaryColor , width: 3), // Set the focused border color
+                  borderSide: const BorderSide(color: kPrimaryColor , width: 3), // Set the focused border color
                 ),
               ),
               style: Styles.textStyle22.copyWith(fontSize: 20),
@@ -131,7 +131,7 @@ class _VerifyOtpState extends State<VerifyOtp> {
                 ),
                 focusedBorder: OutlineInputBorder( // Add focused border style
                   borderRadius: BorderRadius.circular(5),
-                  borderSide: BorderSide(color: kPrimaryColor , width: 3), // Set the focused border color
+                  borderSide: const BorderSide(color: kPrimaryColor , width: 3), // Set the focused border color
                 ),
               ),
               style: Styles.textStyle22.copyWith(fontSize: 20),
@@ -165,7 +165,7 @@ class _VerifyOtpState extends State<VerifyOtp> {
                 ),
                 focusedBorder: OutlineInputBorder( // Add focused border style
                   borderRadius: BorderRadius.circular(5),
-                  borderSide: BorderSide(color: kPrimaryColor , width: 3), // Set the focused border color
+                  borderSide: const BorderSide(color: kPrimaryColor , width: 3), // Set the focused border color
                 ),
               ),
               style: Styles.textStyle22.copyWith(fontSize: 20),

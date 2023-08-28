@@ -2,7 +2,6 @@
 import 'package:facility/features/setting/presentation/views/ContactUsView.dart';
 import 'package:facility/features/setting/presentation/views/communityinfoview.dart';
 import 'package:facility/features/setting/presentation/views/helpcenterview.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:page_transition/page_transition.dart';
@@ -23,6 +22,8 @@ class List_Setting extends StatelessWidget {
     ListModelSetting(icon: Icons.phone, text:"Contact us" ),
   ];
 
+   List_Setting({super.key});
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -40,13 +41,13 @@ class List_Setting extends StatelessWidget {
               index==0?
               Navigator.push(
                   context,
-                  WaveTransition(child: Empty_Gate_Notification_View(), center: FractionalOffset(0.90,0.90),
+                  WaveTransition(child: const Empty_Gate_Notification_View(), center: const FractionalOffset(0.90,0.90),
                       duration: const Duration(milliseconds: 2000),
                   settings: const RouteSettings(arguments: "it works")
                   )
 
               )
-                  :index==1? Navigator.push(context, PageTransition(child: Add_Request_View(),
+                  :index==1? Navigator.push(context, PageTransition(child: const Add_Request_View(),
                   type: PageTransitionType.leftToRightWithFade,duration: const Duration(seconds: 1))):
                 index==2? Navigator.push(context, PageTransition(child: const Community_Info(),
                 type: PageTransitionType.leftToRightWithFade,duration: const Duration(seconds: 1)))

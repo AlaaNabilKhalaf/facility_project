@@ -1,11 +1,12 @@
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../constants.dart';
 
 class ChooseTime extends StatefulWidget {
+  const ChooseTime({super.key});
+
 
   @override
   State<ChooseTime> createState() => _ChooseTimeState();
@@ -21,7 +22,7 @@ class _ChooseTimeState extends State<ChooseTime> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: EdgeInsets.all(5),
+        margin: const EdgeInsets.all(5),
         height: 55.h,
         child: ListView.builder(
             scrollDirection: Axis.horizontal,
@@ -34,7 +35,7 @@ class _ChooseTimeState extends State<ChooseTime> {
                   });                        },
                 child: Container(
                   alignment: Alignment.center,
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   width: 69.w,
                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
                     color: current==index?kPrimaryColor:Colors.transparent,

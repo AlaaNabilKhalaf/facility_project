@@ -2,11 +2,10 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utilies/assets.dart';
-import '../../../setting/presentation/views/widgets/home_item.dart';
 import 'homeitemServuces.dart';
 
 class Grid_Item_Services extends StatelessWidget {
-  Grid_Item_Services({Key? key , required this.index}) : super(key: key);
+  Grid_Item_Services({super.key , required this.index});
   int index=0;
   @override
   Widget build(BuildContext context) {
@@ -22,10 +21,10 @@ class Grid_Item_Services extends StatelessWidget {
     "Request Service",
    "Complain",
    "Security",
-   "اداره ممتلكات",
+   "Property management",
    "Rating",
-   "تصاريح ",
+   "Permeation",
    "News",
-   "اجراءات",
+   "Procedures",
   ];
 }

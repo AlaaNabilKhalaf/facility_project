@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../core/shared_widgets/text_field.dart';
 
 class InputNewGate extends StatelessWidget {
- InputNewGate({required this.text,required this.controller,required this.ontab});
+ InputNewGate({super.key, required this.text,required this.controller,required this.ontab});
 String? text;
 var controller=TextEditingController();
  void Function()? ontab;

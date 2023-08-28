@@ -1,10 +1,11 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../constants.dart';
 
 class ChooseMorning extends StatefulWidget {
+  const ChooseMorning({super.key});
+
 
   @override
   State<ChooseMorning> createState() => _ChooseMorningState();
@@ -32,10 +33,10 @@ class _ChooseMorningState extends State<ChooseMorning> {
               Text(dropDown),
               DropdownButton(
 
-                  icon: Icon(Icons.keyboard_arrow_down),
+                  icon: const Icon(Icons.keyboard_arrow_down),
                   items: const [
-                    DropdownMenuItem(child: Text("Morning"),value: 'Morning',),
-                    DropdownMenuItem(child: Text("Night"),value: 'Night',),
+                    DropdownMenuItem(value: 'Morning',child: Text("Morning"),),
+                    DropdownMenuItem(value: 'Night',child: Text("Night"),),
                   ],
 
                   onChanged: (String?newVal){

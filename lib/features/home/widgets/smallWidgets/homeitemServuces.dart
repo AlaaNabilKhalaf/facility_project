@@ -8,7 +8,7 @@ class HomeItemServices extends StatelessWidget {
 
   final String text;
   final ImageProvider<Object> imagePath;
-  const HomeItemServices({Key? key, required this.text, required this.imagePath}) : super(key: key);
+  const HomeItemServices({super.key, required this.text, required this.imagePath});
 
   @override
   Widget build(BuildContext context) {

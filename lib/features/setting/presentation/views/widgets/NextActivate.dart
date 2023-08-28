@@ -2,8 +2,6 @@ import 'package:facility/constants.dart';
 import 'package:facility/core/shared_widgets/appbar2.dart';
 import 'package:facility/core/shared_widgets/custom_buttom.dart';
 import 'package:facility/features/home/views/homePage.dart';
-import 'package:facility/features/setting/presentation/views/add_request_view.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:image_picker/image_picker.dart';
@@ -15,6 +13,8 @@ import 'dart:io';
 File? imageFile;
 
 class Next_Activate extends StatefulWidget {
+  const Next_Activate({super.key});
+
 
   @override
   State<Next_Activate> createState() => _Next_ActivateState();
@@ -74,7 +74,7 @@ class _Next_ActivateState extends State<Next_Activate> {
 
               SizedBox(height: 110.h,),
             CustomButton(backgroundColor: kPrimaryColor, text: "Request", func: (){
-              showDialog(context: context, builder: (context)=>Custom_Alert(widget: HomePage(), txt: const Text("Request Submitted successfully"),
+              showDialog(context: context, builder: (context)=>Custom_Alert(widget: const HomePage(), txt: const Text("Request Submitted successfully"),
                 ),
               );
             },

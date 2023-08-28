@@ -1,8 +1,6 @@
 import 'package:facility/core/utilies/styles.dart';
 import 'package:facility/features/home/views/homePage.dart';
-import 'package:facility/features/setting/presentation/views/setting_view.dart';
 import 'package:facility/features/setting/presentation/views/widgets/customAlert.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -38,10 +36,10 @@ class ContactusBody extends StatelessWidget {
         SizedBox(height: 160.h,),
         CustomButton(backgroundColor: kPrimaryColor,
           text: "Submit", func: (){
-            showDialog(context: context, builder: (context)=>Custom_Alert(widget:HomePage(),
+            showDialog(context: context, builder: (context)=>Custom_Alert(widget:const HomePage(),
               txt: Column(
                 children: [
-                  Text("Message sent successfully"),
+                  const Text("Message sent successfully"),
                   SizedBox(height: 9.h,),
                   Text("We will contact you shortly",style: Styles.textStyle12.copyWith(color: LIGHT_GREY),)
                 ],

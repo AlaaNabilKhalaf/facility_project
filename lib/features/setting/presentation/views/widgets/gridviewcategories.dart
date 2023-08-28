@@ -1,21 +1,21 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../animation/fadeanimation.dart';
 import 'Entrance_Activation.dart';
 import 'griditem.dart';
 
 class Grid_View_Categories extends StatelessWidget {
 
   List screens=[
-    Enterance_Activation(),
-    Enterance_Activation(),
-    Enterance_Activation(),
-    Enterance_Activation(),
-    Enterance_Activation(),
-    Enterance_Activation(),
-    Enterance_Activation(),
+    const Enterance_Activation(),
+    const Enterance_Activation(),
+    const Enterance_Activation(),
+    const Enterance_Activation(),
+    const Enterance_Activation(),
+    const Enterance_Activation(),
+    const Enterance_Activation(),
   ];
+
+  Grid_View_Categories({super.key});
   @override
   Widget build(BuildContext context) {
 return

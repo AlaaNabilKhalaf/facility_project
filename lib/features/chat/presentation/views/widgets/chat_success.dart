@@ -7,7 +7,7 @@ import '../../../../../constants.dart';
 import '../../../../../core/shared_widgets/custom_buttom.dart';
 
 class SucessBody extends StatefulWidget {
-  const SucessBody({Key? key}) : super(key: key);
+  const SucessBody({super.key});
 
   @override
   State<SucessBody> createState() => _SucessBodyState();
@@ -21,7 +21,7 @@ class _SucessBodyState extends State<SucessBody> {
       child: Column(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        StackChat(),
+        const StackChat(),
 
         CustomButton(
             backgroundColor: kPrimaryColor,

@@ -1,12 +1,11 @@
 import 'package:facility/constants.dart';
 import 'package:facility/core/shared_widgets/appbar2.dart';
 import 'package:facility/features/setting/presentation/views/widgets/Activate_qr.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Enterance_Activation extends StatelessWidget {
-  const Enterance_Activation({Key? key}) : super(key: key);
+  const Enterance_Activation({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +18,7 @@ class Enterance_Activation extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: Container(
-                padding: EdgeInsets.all(20),
+                padding: const EdgeInsets.all(20),
                 alignment: Alignment.center,
                 height: 85.h,
                 decoration: BoxDecoration(
@@ -30,10 +29,10 @@ class Enterance_Activation extends StatelessWidget {
                 child:Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("Activate QR code",style: TextStyle(fontSize: 20,fontWeight: FontWeight.w400),),
+                    const Text("Activate QR code",style: TextStyle(fontSize: 20,fontWeight: FontWeight.w400),),
                     InkWell(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>Activate_Qr()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>const Activate_Qr()));
                         },
 
                         child: Image.asset("assets/icons/arrow.png"))

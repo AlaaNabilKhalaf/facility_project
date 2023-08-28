@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../../core/utilies/styles.dart';
 
 class StackImage extends StatelessWidget {
-  const StackImage({Key? key}) : super(key: key);
+  const StackImage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class StackImage extends StatelessWidget {
                   'Total Balance',
                   style: Styles.textStyle22.copyWith(fontSize: 13 , color: Colors.white),
                 ),
-                SizedBox(height: 5,),
+                const SizedBox(height: 5,),
                 Text(
                   '14,234.00 EGP',
                   style: Styles.textStyle20.copyWith(color: Colors.white),

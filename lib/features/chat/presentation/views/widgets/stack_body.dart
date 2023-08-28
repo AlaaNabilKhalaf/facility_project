@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../constants.dart';
-import '../../../../../core/shared_widgets/custom_buttom.dart';
 import 'chat_content.dart';
 class ChatStack extends StatelessWidget {
-  const ChatStack({Key? key}) : super(key: key);
+  const ChatStack({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +24,7 @@ class ChatStack extends StatelessWidget {
                 MediaQuery.of(context).size.height / 20,
                 MediaQuery.of(context).size.height / 30,
                 MediaQuery.of(context).size.height / 30),
-            child: ChatContent(),
+            child: const ChatContent(),
           ),
         ),
         Align(

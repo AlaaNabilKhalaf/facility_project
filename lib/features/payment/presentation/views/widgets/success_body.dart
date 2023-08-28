@@ -5,7 +5,7 @@ import '../../../../../constants.dart';
 import '../../../../../core/shared_widgets/custom_buttom.dart';
 
 class SuccessBody extends StatelessWidget {
-  const SuccessBody({Key? key}) : super(key: key);
+  const SuccessBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class SuccessBody extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SuccessStack(),
+          const SuccessStack(),
           SizedBox(
             height: MediaQuery.of(context).size.height / 14,
           ),
