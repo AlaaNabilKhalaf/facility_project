@@ -21,15 +21,15 @@ class ServiceList extends StatelessWidget {
     return  Padding(
       padding: const EdgeInsets.symmetric(vertical: 16.0,horizontal: 8),
       child: SizedBox(
-        height: 100,
+        height: MediaQuery.of(context).size.height/7,
         child: ListView.builder(
             itemCount: 6,
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
               return  Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 10),
+                padding: const EdgeInsets.only(right: 10),
                 child: HomeItem(
-                  num: 2.8,
+                  num: 1.2,
                   imagePath: AssetImage(AssetData.services[index]),
                   text: services[index],
                 ),

@@ -15,7 +15,7 @@ final double num ;
     return AspectRatio(
       aspectRatio: num/1.3,
       child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+        // padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
         decoration:  BoxDecoration(
           border: Border.all(
             color: LIGHT_GREY,

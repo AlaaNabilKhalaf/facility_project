@@ -9,15 +9,15 @@ class Search extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        width: MediaQuery.of(context).size.width *.7,
+        // width: MediaQuery.of(context).size.width *.7,
         decoration:  BoxDecoration(
           color: Colors.white,
           borderRadius: const BorderRadius.all(Radius.elliptical(3, 3)),
           boxShadow: [
             BoxShadow(
-              color: Colors.grey.withOpacity(0.5), // Set the shadow color
-              spreadRadius: 2, // Set the spread radius of the shadow
-              blurRadius: 6, // Set the blur radius of the shadow
+              color: Colors.grey[50]!, // Set the shadow color
+              spreadRadius: 1, // Set the spread radius of the shadow
+              blurRadius: 10, // Set the blur radius of the shadow
               offset: Offset(0, 3), // Set the offset of the shadow
             ),
           ],
@@ -41,7 +41,7 @@ class Search extends StatelessWidget {
               prefixIcon: IconButton(
                 onPressed: () {},
                 icon: const Opacity(
-                  opacity: .8,
+                  opacity: .4,
                   child: Icon(
                     FontAwesomeIcons.magnifyingGlass,
                     size: 22,

@@ -43,7 +43,7 @@ class _BottomNavBarState extends State<BottomNavBar> with TickerProviderStateMix
               currentindex = index;
             });
           },
-          margin: const EdgeInsets.only(left: 10, right: 10),
+          // margin: const EdgeInsets.only(left: 10, right: 10),
           // currentIndex: _SelectedTab.values.indexOf(_selectedTab),
           unselectedItemColor: Colors.grey[300],
           splashBorderRadius: 50,

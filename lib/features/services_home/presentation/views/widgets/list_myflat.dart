@@ -15,24 +15,21 @@ class ListFlat extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-          return Padding(
-            padding: const EdgeInsets.symmetric(vertical: 16.0,horizontal: 8),
-            child: SizedBox(
-              height: 100,
-              child: ListView.builder(
-                  itemCount: 3,
-                  scrollDirection: Axis.horizontal,
-                  itemBuilder: (context, index) {
-                    return  Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 10),
-                      child: HomeItem(
-                        num: 2.8,
-                        imagePath: AssetImage(items[index].imagePath) ,
-                        text: items[index].text,
-                      ),
-                    );
-                  }
-              ),
+          return SizedBox(
+            height: MediaQuery.of(context).size.height/7,
+            child: ListView.builder(
+                itemCount: 3,
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) {
+                  return  Padding(
+                    padding: EdgeInsets.only(right: 30),
+                    child: HomeItem(
+                      num: 1.2,
+                      imagePath: AssetImage(items[index].imagePath) ,
+                      text: items[index].text,
+                    ),
+                  );
+                }
             ),
           );
   }
