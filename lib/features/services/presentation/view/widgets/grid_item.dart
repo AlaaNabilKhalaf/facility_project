@@ -1,3 +1,4 @@
+import 'package:facility/features/services_home/presentation/views/water_pill.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utilies/assets.dart';
@@ -7,10 +8,13 @@ class GridItem extends StatelessWidget {
  int index=0;
   @override
   Widget build(BuildContext context) {
-    return HomeItem(
-      num: 2.8,
-      text: services[index],
-      imagePath: AssetImage(AssetData.services[index]),
+    return GestureDetector(
+      onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (context)=>WaterPill())),
+      child: HomeItem(
+        num: 2.8,
+        text: services[index],
+        imagePath: AssetImage(AssetData.services[index]),
+      ),
     );
   }
 

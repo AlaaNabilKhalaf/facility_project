@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../services/presentation/view/flat_view.dart';
 import 'list_item.dart';
 import 'list_model.dart';
 
@@ -23,10 +24,13 @@ class ListFlat extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return  Padding(
                     padding: EdgeInsets.only(right: 30),
-                    child: HomeItem(
-                      num: 1.2,
-                      imagePath: AssetImage(items[index].imagePath) ,
-                      text: items[index].text,
+                    child: GestureDetector(
+                      onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (context)=>FlatView())),
+                      child: HomeItem(
+                        num: 1.2,
+                        imagePath: AssetImage(items[index].imagePath) ,
+                        text: items[index].text,
+                      ),
                     ),
                   );
                 }

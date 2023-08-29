@@ -23,7 +23,7 @@ class _HomeBodyState extends State<HomeBody> {
       slivers: [
         SliverToBoxAdapter(
        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children:  [
@@ -75,6 +75,14 @@ class _HomeBodyState extends State<HomeBody> {
               //   ),
               // ),
               // SponsersList(),
+              const Text(
+                "Our Sponsers",
+                style: Styles.textStyle20,
+              ),
+              SizedBox(
+                height: MediaQuery.of(context).size.height / 9,
+                child: const SponsersList(),
+              ),
             ],
           ),
         ),

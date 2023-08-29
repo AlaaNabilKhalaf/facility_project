@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../../../../constants.dart';
 import '../../../../core/shared_widgets/appbar2.dart';
 import '../../../../core/utilies/styles.dart';
+import '../../../services/presentation/view/widgets/appBar4.dart';
 
 class WaterPill extends StatefulWidget {
   const WaterPill({Key? key}) : super(key: key);
@@ -17,7 +18,7 @@ class _WaterPillState extends State<WaterPill> {
   Widget build(BuildContext context) {
     return  Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBarButtom2(
+      appBar: AppBarButtom4(
         text: '',
         columnText: Column(
           children: [
