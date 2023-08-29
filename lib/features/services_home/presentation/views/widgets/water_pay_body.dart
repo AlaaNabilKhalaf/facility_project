@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../../constants.dart';
 import '../../../../../core/shared_widgets/custom_buttom.dart';
+import '../../../../../core/shared_widgets/text_field.dart';
 import '../../../../../core/utilies/styles.dart';
 
 class WaterPayBody extends StatefulWidget {
@@ -55,26 +56,31 @@ class _WaterPayBodyState extends State<WaterPayBody> {
           Container(
             width: double.infinity,
             color: const Color(0xFFF8F8F8),
-            child: const Padding(
-              padding: EdgeInsets.all(15.0),
+            child:  Padding(
+              padding: const EdgeInsets.all(15.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('How much would you like to pay?' , style: Styles.textStyle18),
-                  SizedBox(
+                  const Text('How much would you like to pay?' , style: Styles.textStyle18),
+                  const SizedBox(
                     height: 20,
                   ),
-                  Text(
+                  const Text(
                     'Amount of money',
                     style: Styles.textStyle14,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
-
+                  defaultText(
+                    type: TextInputType.number,
+                  ),
                 ],
               ),
             ),
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height / 14,
           ),
           CustomButton(
             // height: MediaQuery.of(context).size.height / 14,
