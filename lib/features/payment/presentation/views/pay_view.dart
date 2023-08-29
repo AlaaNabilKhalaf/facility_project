@@ -6,7 +6,7 @@ import '../../../../core/shared_widgets/appbar2.dart';
 import '../../../../core/utilies/styles.dart';
 
 class PaymentView extends StatelessWidget {
-  const PaymentView({Key? key}) : super(key: key);
+  const PaymentView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class PaymentView extends StatelessWidget {
             ),
           ],
         ),),
-        body: PayBody(),
+        body: const PayBody(),
       ),
     );
   }

@@ -1,7 +1,6 @@
 
 import 'package:facility/features/auth/presentation/views/widgets/verify_otp.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 import '../../../../../constants.dart';
 import '../../../../../core/shared_widgets/custom_buttom.dart';
@@ -9,7 +8,7 @@ import '../../../../../core/utilies/styles.dart';
 import '../../../../home/views/homePage.dart';
 
 class VerifyBody extends StatefulWidget {
-  const VerifyBody({Key? key}) : super(key: key);
+  const VerifyBody({super.key});
 
   @override
   State<VerifyBody> createState() => _VerifyBodyState();
@@ -23,21 +22,21 @@ class _VerifyBodyState extends State<VerifyBody> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
+          const Text(
               'Verification',
             style: Styles.textStyle27,
           ),
-          SizedBox(
+          const SizedBox(
             height: 15,
           ),
-          Text(
+          const Text(
               'Enter 4-digit number that',
             style: Styles.textStyle22,
           ),
-          SizedBox(
+          const SizedBox(
             height: 5,
           ),
-          Text(
+          const Text(
             'sent to +2011221****',
             style: Styles.textStyle22,
           ),
@@ -52,7 +51,7 @@ class _VerifyBodyState extends State<VerifyBody> {
               backgroundColor: kPrimaryColor,
               text: 'Continue',
               func: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>const HomePage()));
               },
             ),
           ),

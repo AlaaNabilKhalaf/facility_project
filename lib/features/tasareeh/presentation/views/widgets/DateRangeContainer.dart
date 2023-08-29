@@ -1,12 +1,11 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:table_calendar/table_calendar.dart';
+
 
 import '../../../../../constants.dart';
 
 class DateRangeContainer extends StatefulWidget {
-  const DateRangeContainer({Key? key}) : super(key: key);
+  const DateRangeContainer({super.key});
 
   @override
   State<DateRangeContainer> createState() => _DateRangeContainerState();
@@ -52,9 +51,9 @@ class _DateRangeContainerState extends State<DateRangeContainer> {
               rangeStartDay: rangeStart,
               rangeEndDay: rangeEnd,
               calendarStyle: CalendarStyle(
-                  rangeStartDecoration:BoxDecoration(color: kPrimaryColor,shape: BoxShape.circle) ,
-                  rangeEndDecoration: BoxDecoration(color: kPrimaryColor,shape: BoxShape.circle),
-                  todayDecoration: BoxDecoration(color: kPrimaryColor,shape: BoxShape.circle),
+                  rangeStartDecoration:const BoxDecoration(color: kPrimaryColor,shape: BoxShape.circle) ,
+                  rangeEndDecoration: const BoxDecoration(color: kPrimaryColor,shape: BoxShape.circle),
+                  todayDecoration: const BoxDecoration(color: kPrimaryColor,shape: BoxShape.circle),
                   selectedDecoration: const BoxDecoration(color: kPrimaryColor,shape: BoxShape.rectangle),
                   rangeHighlightColor: kPrimaryColor.withOpacity(.3)),
               rowHeight: 39.h,
@@ -70,3 +69,4 @@ class _DateRangeContainerState extends State<DateRangeContainer> {
     );
   }
 }
+

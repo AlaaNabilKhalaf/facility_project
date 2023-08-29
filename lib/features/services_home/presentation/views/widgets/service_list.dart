@@ -5,7 +5,7 @@ import 'list_item.dart';
 
 
 class ServiceList extends StatelessWidget {
-   ServiceList({Key? key}) : super(key: key);
+   ServiceList({super.key});
 
    final services = [
      "Water",

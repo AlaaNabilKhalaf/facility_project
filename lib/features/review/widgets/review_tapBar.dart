@@ -1,11 +1,8 @@
 import 'package:facility/features/review/view/specific_review.dart';
 import 'package:facility/features/review/widgets/general_review_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:rflutter_alert/rflutter_alert.dart';
 import '../../../constants.dart';
-import '../../../core/shared_widgets/custom_buttom.dart';
 import '../../../core/utilies/styles.dart';
 
 class ReviewCustomTabBar extends StatefulWidget {

@@ -7,7 +7,7 @@ class AppBarForHomePage extends StatefulWidget  implements PreferredSizeWidget {
   final String text;
   Widget? columnText;
 
-  AppBarForHomePage({Key? key, required this.text,this.columnText , required this.titleBool, }) : super(key: key);
+  AppBarForHomePage({super.key, required this.text,this.columnText , required this.titleBool, });
 
   @override
   State<AppBarForHomePage> createState() => _AppBarForHomePageState();

@@ -9,10 +9,9 @@ import '../../../../../core/shared_widgets/custom_buttom.dart';
 import '../../../../../core/shared_widgets/text_field.dart';
 import '../../../../../core/utilies/styles.dart';
 
-import '../register_view.dart';
 
 class SignBody extends StatefulWidget {
-  const SignBody({Key? key}) : super(key: key);
+  const SignBody({super.key});
 
   @override
   State<SignBody> createState() => _SignBodyState();
@@ -24,7 +23,7 @@ class _SignBodyState extends State<SignBody> {
   @override
   Widget build(BuildContext context) {
    return Padding(
-     padding:  EdgeInsets.all(20.0), //this number is standard at all at will make padding to make it in center
+     padding:  const EdgeInsets.all(20.0), //this number is standard at all at will make padding to make it in center
      child: Center(
        child: SingleChildScrollView(
          child: Column(
@@ -35,7 +34,7 @@ class _SignBodyState extends State<SignBody> {
                style: Styles.textStyle27,
              ),
              const SizedBox(height: 20,),
-             SizedBox(height: 5,),
+             const SizedBox(height: 5,),
              const Text(
                'Welcome Back.' ,
                style: Styles.textStyle22,
@@ -78,7 +77,7 @@ class _SignBodyState extends State<SignBody> {
                backgroundColor: kPrimaryColor,
                text: 'Sign in',
                func: () {
-                 Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
+                 Navigator.push(context, MaterialPageRoute(builder: (context)=>const HomePage()));
                },
              ),
              const SizedBox(

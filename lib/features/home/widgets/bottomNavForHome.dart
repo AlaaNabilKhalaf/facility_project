@@ -9,7 +9,7 @@ import '../views/servicesScreen.dart';
 
 
 class BottomNavBarForHome extends StatefulWidget {
-  const BottomNavBarForHome({Key? key}) : super(key: key);
+  const BottomNavBarForHome({super.key});
 
   @override
   State<BottomNavBarForHome> createState() => _BottomNavBarState();
@@ -21,7 +21,7 @@ class _BottomNavBarState extends State<BottomNavBarForHome> with TickerProviderS
     const HomeScreen(),
     const ServicesScreen(),
     const DiscoverScreen(),
-    SettingView()
+    const SettingView()
   ];
   Widget currentScreen = const HomeScreen();
   @override

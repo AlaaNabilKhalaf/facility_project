@@ -4,6 +4,8 @@ import '../../../../../constants.dart';
 import '../../../../../core/utilies/styles.dart';
 
 class Receit extends StatelessWidget {
+  Receit({super.key});
+
   // const ({Key? key}) : super(key: key);
 
   @override

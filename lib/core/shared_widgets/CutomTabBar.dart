@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../constants.dart';
@@ -7,6 +6,8 @@ import '../../features/setting/presentation/views/widgets/HistoryRequestContaine
 import '../../features/setting/presentation/views/widgets/selectContainer.dart';
 
 class Custom_TabBar extends StatefulWidget {
+  const Custom_TabBar({super.key});
+
   @override
   State<Custom_TabBar> createState() => _Custom_TabBarState();
 }

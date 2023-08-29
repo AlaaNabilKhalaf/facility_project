@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../../../../../core/utilies/styles.dart';
 
@@ -6,7 +7,7 @@ class AppBarButtom3 extends StatefulWidget  implements PreferredSizeWidget {
 
   final String text;
   Widget? columnText;
-  AppBarButtom3({Key? key, required this.text,this.columnText}) : super(key: key);
+  AppBarButtom3({super.key, required this.text,this.columnText});
 
   @override
   State<AppBarButtom3> createState() => _AppBarButtom3State();
@@ -20,22 +21,27 @@ class _AppBarButtom3State extends State<AppBarButtom3> {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      leading: SizedBox(),
+      leading: const SizedBox(),
       elevation: 0,
       backgroundColor: Colors.transparent,
       flexibleSpace: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            widget.columnText==null? Text(
-              widget.text,
-              style: Styles.textStyle15.copyWith(fontSize: 16 , color: Colors.black  ),
-            ) : widget.columnText!,
+            Align(
+              alignment: Alignment.center,
+              child: Text(
+                widget.text,
+                style: Styles.textStyle15.copyWith(fontSize: 16 , color: Colors.black  ),
+              ),
+            ),
             Expanded(
               child: Align(
                 alignment: Alignment.centerRight,
                 child: Container(
-                  width: 50,
+                  width: 45,
                   height: 90,
                   decoration:  BoxDecoration(
                     color: Colors.white,
@@ -45,13 +51,15 @@ class _AppBarButtom3State extends State<AppBarButtom3> {
                         color: Colors.grey.withOpacity(0.5), // Set the shadow color
                         spreadRadius: 2, // Set the spread radius of the shadow
                         blurRadius: 6, // Set the blur radius of the shadow
-                        offset: Offset(0, 3), // Set the offset of the shadow
+                        offset: const Offset(0, 3), // Set the offset of the shadow
                       ),
                     ],
                   ),
-                  child:  IconButton(
-                    icon: Icon(Icons.add),
-                    onPressed: () {  },
+                  child:  GestureDetector(
+                    child: Image.asset(
+                      'assets/icons/vuesax-bold-candle-2.png',
+                      fit: BoxFit.scaleDown,
+                    ),
                   ),
                 ),
               ),

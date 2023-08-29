@@ -15,13 +15,16 @@ void Function()?  onTab,
   bool? enable,
   int? lines,
   String? prefixImageAsset,
-  double?borderWidth,
+  // double? borderWidth,
   int?maxLines,
+  double borderWidth = 1.0,
 }) => TextFormField(
+
   minLines: maxLines,
   enabled: enable,
   controller: controller,
   obscureText: isObscure,
+
   decoration:  InputDecoration(
     hintText: hint,
     prefixIcon: prefixImageAsset != null // Use prefixImageAsset to conditionally show the image
@@ -43,17 +46,18 @@ void Function()?  onTab,
     ),
     focusedBorder: OutlineInputBorder(
       borderSide: BorderSide(
-        width: borderWidth!,
-            color: LIGHT_GREY
+        width: borderWidth,
+          color: LIGHT_GREY
       )
     ),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(9),
         borderSide: BorderSide(
           width: borderWidth,
-          
+            color: LIGHT_GREY
         )
       )
+
   ),
   keyboardType: type,
   onChanged: onChange,

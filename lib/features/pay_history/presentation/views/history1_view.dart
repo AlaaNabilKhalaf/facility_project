@@ -3,7 +3,7 @@ import 'package:facility/features/pay_history/presentation/views/widgets/history
 import 'package:flutter/material.dart';
 
 class PayHistoryView extends StatelessWidget {
-  const PayHistoryView({Key? key}) : super(key: key);
+  const PayHistoryView({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import '../../../../../constants.dart';
 
 class RadioCheck2 extends StatefulWidget {
-  const RadioCheck2({Key? key}) : super(key: key);
+  const RadioCheck2({super.key});
 
   @override
   State<RadioCheck2> createState() => _RadioCheck2State();

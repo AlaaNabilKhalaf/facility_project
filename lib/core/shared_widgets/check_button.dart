@@ -5,7 +5,7 @@ import '../utilies/styles.dart';
 
 class CheckButtom extends StatefulWidget {
   final String text;
-  const CheckButtom({Key? key, required this.text}) : super(key: key);
+  const CheckButtom({super.key, required this.text});
 
   @override
   State<CheckButtom> createState() => _CheckButtomState();

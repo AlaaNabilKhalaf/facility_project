@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/shared_widgets/button_appbar.dart';
 
 class RegisterView extends StatelessWidget {
-  const RegisterView({Key? key}) : super(key: key);
+  const RegisterView({super.key});
 
   @override
   Widget build(BuildContext context) {

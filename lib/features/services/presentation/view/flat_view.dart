@@ -6,7 +6,7 @@ import '../../../../constants.dart';
 import '../../../../core/shared_widgets/appbar2.dart';
 import '../../../../core/utilies/styles.dart';
 class FlatView extends StatelessWidget {
-  const FlatView({Key? key}) : super(key: key);
+  const FlatView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class FlatView extends StatelessWidget {
             ),
           ],
         ),),
-        body: FlatBody(),
+        body: const FlatBody(),
       ),
     );
   }

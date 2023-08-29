@@ -33,25 +33,27 @@ dependencies:
   google_fonts:
   go_router:
   font_awesome_flutter:
-  flutter_screenutil: ^5.8.4
+  flutter_screenutil:
   bloc:
-  flutter_bloc: ^8.1.3
-  animated_text_kit: ^4.2.2
-  page_transition: ^2.0.9
-  wave_transition: ^0.0.6
+  flutter_bloc:
+  animated_text_kit:
+  simple_animations:
+  page_transition:
+  supercharged:
+  wave_transition:
   flutter_date_pickers:
   intl:
   date_picker_timeline:
   rflutter_alert:
   flutter_rating_bar:
-  image_picker: ^1.0.2
-  table_calendar: ^3.0.9
+  image_picker:
+
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  smooth_page_indicator: ^1.1.0
-  dot_navigation_bar: ^1.0.2
+  smooth_page_indicator:
+  dot_navigation_bar:
   carousel_slider:
 dev_dependencies:
   flutter_test:

@@ -1,6 +1,4 @@
 
-import 'package:facility/features/tasareeh/presentation/views/widgets/tasareeh.dart';
-import 'package:facility/features/setting/presentation/views/widgets/Entrance_Activation.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../constants.dart';
@@ -10,7 +8,7 @@ class HomeItemSetting extends StatelessWidget {
 
   final String text;
   final ImageProvider<Object> imagePath;
-   HomeItemSetting({Key? key, required this.text, required this.imagePath}) : super(key: key);
+   const HomeItemSetting({super.key, required this.text, required this.imagePath});
 
 
 

@@ -7,7 +7,7 @@ import '../../views/FurnitureScreen.dart';
 
 
 class DiscoverScreenListview extends StatelessWidget {
-  DiscoverScreenListview({Key? key,}) : super(key: key);
+  DiscoverScreenListview({super.key,});
 
   final services1 = [
     "Furniture",
@@ -37,7 +37,7 @@ class DiscoverScreenListview extends StatelessWidget {
                       padding: const EdgeInsets.only(right: 7,top: 10),
                       child: GestureDetector(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>  FurnitureScreen()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>  const FurnitureScreen()));
 
                         },
                         child: HomeItem(num: 1.8,

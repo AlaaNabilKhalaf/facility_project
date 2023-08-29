@@ -1,10 +1,8 @@
 
 import 'package:date_picker_timeline/date_picker_widget.dart';
 import 'package:facility/features/tasareeh/presentation/views/widgets/tasareehSuccess.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:intl/intl.dart';
 
 import '../../../../../constants.dart';
 import '../../../../../core/shared_widgets/appbar2.dart';
@@ -13,6 +11,8 @@ import '../../../../../core/shared_widgets/text_field.dart';
 import '../../../../../core/utilies/styles.dart';
 
 class Tasareeh_View extends StatefulWidget {
+  const Tasareeh_View({super.key});
+
 
   @override
   State<Tasareeh_View> createState() => _Tasareeh_ViewState();
@@ -70,13 +70,13 @@ class _Tasareeh_ViewState extends State<Tasareeh_View> {
             SizedBox(height: 10.h,),
 
             Container(
-              padding: EdgeInsets.all(17),
+              padding: const EdgeInsets.all(17),
               height: 190.h,
               color: LIGHT_GREY.withOpacity(.2),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Select the date",style: Styles.textStyle16,),
+                  const Text("Select the date",style: Styles.textStyle16,),
                   SizedBox(height: 5.h,),
                   GestureDetector(
                     onTap: () {
@@ -93,8 +93,8 @@ class _Tasareeh_ViewState extends State<Tasareeh_View> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Text("${selectedDate.toLocal()}".split(' ')[0],style: TextStyle(color: Colors.white),),
-                          Icon(Icons.arrow_drop_down_sharp,color: Colors.white,)
+                          Text("${selectedDate.toLocal()}".split(' ')[0],style: const TextStyle(color: Colors.white),),
+                          const Icon(Icons.arrow_drop_down_sharp,color: Colors.white,)
                         ],
                       )
                     ),
@@ -124,7 +124,7 @@ SizedBox(height: 20.h,),
               padding: const EdgeInsets.symmetric(vertical: 10),
               child: CustomButton(backgroundColor: kPrimaryColor, text: "Request a visit", func: (){
 
-Navigator.push(context, MaterialPageRoute(builder: (context)=>Tasreeh_Success()));
+Navigator.push(context, MaterialPageRoute(builder: (context)=>const Tasreeh_Success()));
               }, width: double.infinity,height: 55.h,),
             )
 

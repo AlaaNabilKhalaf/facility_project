@@ -2,9 +2,8 @@ import 'package:facility/features/services/presentation/view/widgets/services_bo
 import 'package:flutter/material.dart';
 
 import '../../../../core/shared_widgets/appbar2.dart';
-import '../../../../core/shared_widgets/button_appbar.dart';
 class ServicesView extends StatelessWidget {
-  const ServicesView({Key? key}) : super(key: key);
+  const ServicesView({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../constants.dart';
 
 class AppBarButtom extends StatefulWidget  implements PreferredSizeWidget {
-  const AppBarButtom({Key? key}) : super(key: key);
+  const AppBarButtom({super.key});
 
   @override
   State<AppBarButtom> createState() => _AppBarButtomState();
@@ -17,7 +17,7 @@ class _AppBarButtomState extends State<AppBarButtom> {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      leading: SizedBox(),
+      leading: const SizedBox(),
       elevation: 0,
       backgroundColor: Colors.transparent,
       flexibleSpace: Padding(
@@ -60,8 +60,8 @@ class _AppBarButtomState extends State<AppBarButtom> {
                     color: lightWhiteColor,
                     borderRadius: BorderRadius.all(Radius.elliptical(5, 5)),
                   ),
-                  child: Center(
-                    child: const Text(
+                  child: const Center(
+                    child: Text(
                       'العربية',
 
                          ),

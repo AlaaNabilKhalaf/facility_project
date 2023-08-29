@@ -11,7 +11,7 @@ import '../../../../../core/utilies/styles.dart';
 
 
 class RegisterBody extends StatefulWidget {
-  const RegisterBody({Key? key}) : super(key: key);
+  const RegisterBody({super.key});
 
   @override
   State<RegisterBody> createState() => _RegisterBodyState();
@@ -92,14 +92,14 @@ class _RegisterBodyState extends State<RegisterBody> {
                 const SizedBox(
                   height: 15.0,
                 ),
-                RadioCheck(),
+                const RadioCheck(),
                 const SizedBox(
                   height: 20.0,
                 ),
-                CheckButtom(
+                const CheckButtom(
                   text: 'I agree to terms and conditions',
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 CustomButton(

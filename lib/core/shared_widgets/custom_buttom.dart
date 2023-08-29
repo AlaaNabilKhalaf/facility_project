@@ -6,18 +6,17 @@ import '../utilies/styles.dart';
 class CustomButton extends StatelessWidget {
   const CustomButton(
       {
-        Key? key,
+        super.key,
         required this.backgroundColor,
         this.textColor=Colors.white,
         this.borderRadius,
         required this.text,
         this.fontSized,
        required this.func,
-        required this.width,
+         this.width,
         this.height = 50,
 
-      })
-      : super(key: key);
+      });
   final double? width;
   final double? height;
   final Color backgroundColor;

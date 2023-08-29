@@ -3,11 +3,11 @@ import 'package:facility/features/boarding/presentation/view/widgets/boarding_bo
 import 'package:flutter/material.dart';
 
 class BoardingView extends StatelessWidget {
-  const BoardingView({Key? key}) : super(key: key);
+  const BoardingView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return const SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
         body: BoardingBody(),

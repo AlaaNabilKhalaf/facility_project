@@ -9,7 +9,7 @@ import '../../../../../core/utilies/styles.dart';
 import 'image_stack2.dart';
 
 class PayBody extends StatefulWidget {
-  const PayBody({Key? key}) : super(key: key);
+  const PayBody({super.key});
 
   @override
   State<PayBody> createState() => _PayBodyState();
@@ -21,7 +21,7 @@ class _PayBodyState extends State<PayBody> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-       Expanded(
+       const Expanded(
          flex: 2,
            child: StackImage()),
         Expanded(

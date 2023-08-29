@@ -82,7 +82,7 @@ final List<bool> colorBool = [
                                         color: Colors.grey.shade300)
                                 ),
                                 child:   Padding(
-                                  padding: EdgeInsets.all( 10),
+                                  padding: const EdgeInsets.all( 10),
                                   child:
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -108,7 +108,7 @@ final List<bool> colorBool = [
 
 
                                                       ),
-                                             DiscoverBottomWidgetTextAndIcon()
+                                             const DiscoverBottomWidgetTextAndIcon()
                                            ],
                                          ),
                                          Column(
