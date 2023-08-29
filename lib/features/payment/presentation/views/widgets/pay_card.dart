@@ -49,15 +49,9 @@ class _PayCardState extends State<PayCard> {
                       style: Styles.textStyle22.copyWith(fontSize: 12),
                     ),
                     const SizedBox(height: 5,),
-                    SizedBox(
-                      width: 250,
-                      child: TextField(
-                        decoration:  InputDecoration(
-                          border:  OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(5),
-                          ),
-                        ),
-                      ),
+                    defaultText(
+                      type: TextInputType.text,
+                      prefixImageAsset: AssetData.penIcon,
                     ),
                   ],
                 ),
@@ -72,16 +66,10 @@ class _PayCardState extends State<PayCard> {
                       style: Styles.textStyle22.copyWith(fontSize: 12),
                     ),
                     const SizedBox(height: 5,),
-                    SizedBox(
-                      width: 250,
-                      child: TextField(
-                        decoration:  InputDecoration(
-                          border:  OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(5),
-                          ),
-                          hintText: 'CVV',
-                        ),
-                      ),
+                    defaultText(
+                      type: TextInputType.text,
+                      prefixImageAsset: AssetData.penIcon,
+                      hint: 'CVV',
                     ),
                   ],
                 ),
@@ -96,14 +84,20 @@ class _PayCardState extends State<PayCard> {
           const SizedBox(height: 8,),
           defaultText(
             type: TextInputType.text,
+            prefixImageAsset: AssetData.penIcon,
+            // suffix: AssetData.personIcon,
           ),
           const SizedBox(height: 14,),
           const CheckButtom(
             text: 'Save card for future payment',
           ),
-        const SizedBox(height: 50,),
+          SizedBox(
+            height: MediaQuery.of(context).size.height / 14,
+          ),
+
+        // const SizedBox(height: 50,),
           CustomButton(
-            width: MediaQuery.of(context).size.width*.7,
+            width: double.infinity,
               backgroundColor: kPrimaryColor,
               text: 'Confirm',
               func: (){}

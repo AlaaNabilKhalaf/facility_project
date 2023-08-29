@@ -24,7 +24,7 @@ abstract class AppRouter{
 
     GoRoute(
       path: '/',
-      builder: (context , state) => const PillPay(),
+      builder: (context , state) => const PayCardView(),
     ),
 
     GoRoute(

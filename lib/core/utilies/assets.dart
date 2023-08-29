@@ -20,6 +20,7 @@ class AssetData {
     "assets/images/img_1.png"
   ];
   static const penIcon = 'assets/icons/Layer 92.png';
+  static const personIcon = 'assets/icons/person.png';
   static const history = [
     "assets/images/Icon ionic-ios-water.png",
     "assets/images/svgexport-6 (56).png",
