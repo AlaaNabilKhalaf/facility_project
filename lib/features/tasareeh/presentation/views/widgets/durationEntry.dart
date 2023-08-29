@@ -31,7 +31,7 @@ class _DurationEntryState extends State<DurationEntry> {
               SizedBox(height: 20.h,),
               const Text('Please enter the duration of the workers stay',style: Styles.textStyle16,),
               SizedBox(height: 20.h,),
-              // const DateRangeContainer(),
+              const DateRangeContainer(),
               SizedBox(height: 20.h,),
               Container(
                 padding: const EdgeInsets.all(10),

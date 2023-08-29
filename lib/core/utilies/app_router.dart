@@ -3,6 +3,7 @@
 import 'package:facility/features/services_home/presentation/views/pay_water.dart';
 import 'package:facility/features/services_home/presentation/views/water_pill.dart';
 import 'package:facility/features/services_home/presentation/views/widgets/water_pay_body.dart';
+import 'package:facility/features/splash/splash_screen1.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/auth/presentation/views/register_view.dart';
@@ -24,7 +25,7 @@ abstract class AppRouter{
 
     GoRoute(
       path: '/',
-      builder: (context , state) => const PayHistoryView(),
+      builder: (context , state) => const SplashScreen(),
     ),
 
     GoRoute(
