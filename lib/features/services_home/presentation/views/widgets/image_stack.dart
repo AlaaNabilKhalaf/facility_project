@@ -8,6 +8,11 @@ class ImageStack extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+
+    double leftPosition = screenWidth >= 600 ? 50 : 120;
+
+    double topPosition = screenWidth >= 600 ? 100 : 120;
     return Stack(
       children: [
         Center(
@@ -18,8 +23,8 @@ class ImageStack extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: 110,
-          left: 320,
+          top:  topPosition,
+          left: leftPosition,
           child: Column(
             children: [
               Text(
@@ -36,7 +41,7 @@ class ImageStack extends StatelessWidget {
         ),
         Positioned(
           top: 170,
-          left: 320,
+          left: leftPosition,
           child: CustomButton(
             backgroundColor: Colors.white,
             text: 'Pay all' ,

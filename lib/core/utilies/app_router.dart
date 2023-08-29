@@ -1,5 +1,7 @@
 
 
+import 'package:facility/features/services_home/presentation/views/water_pill.dart';
+import 'package:facility/features/services_home/presentation/views/widgets/water_pay_body.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/auth/presentation/views/register_view.dart';
@@ -21,7 +23,7 @@ abstract class AppRouter{
 
     GoRoute(
       path: '/',
-      builder: (context , state) => const RegisterView(),
+      builder: (context , state) => const WaterPayBody(),
     ),
 
     GoRoute(
