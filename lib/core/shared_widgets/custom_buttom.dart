@@ -13,7 +13,7 @@ class CustomButton extends StatelessWidget {
         required this.text,
         this.fontSized,
        required this.func,
-        required this.width,
+         this.width,
         this.height = 50,
 
       });

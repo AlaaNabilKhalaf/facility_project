@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../../../../../core/utilies/styles.dart';
 
@@ -26,16 +27,21 @@ class _AppBarButtom3State extends State<AppBarButtom3> {
       flexibleSpace: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            widget.columnText==null? Text(
-              widget.text,
-              style: Styles.textStyle15.copyWith(fontSize: 16 , color: Colors.black  ),
-            ) : widget.columnText!,
+            Align(
+              alignment: Alignment.center,
+              child: Text(
+                widget.text,
+                style: Styles.textStyle15.copyWith(fontSize: 16 , color: Colors.black  ),
+              ),
+            ),
             Expanded(
               child: Align(
                 alignment: Alignment.centerRight,
                 child: Container(
-                  width: 50,
+                  width: 45,
                   height: 90,
                   decoration:  BoxDecoration(
                     color: Colors.white,
@@ -49,9 +55,11 @@ class _AppBarButtom3State extends State<AppBarButtom3> {
                       ),
                     ],
                   ),
-                  child:  IconButton(
-                    icon: const Icon(Icons.add),
-                    onPressed: () {  },
+                  child:  GestureDetector(
+                    child: Image.asset(
+                      'assets/icons/vuesax-bold-candle-2.png',
+                      fit: BoxFit.scaleDown,
+                    ),
                   ),
                 ),
               ),

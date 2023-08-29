@@ -17,26 +17,24 @@ class ListHistory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 16.0,horizontal: 8),
-        child: SizedBox(
-          height: 500,
-          width: 500,
-          child: ListView.builder(
-              physics: const NeverScrollableScrollPhysics(),
-              itemCount: 4,
-              itemBuilder: (context, index) {
-                return  Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 10),
-                  child: HomeItem(
-                    num: 2.8,
-                    imagePath: AssetImage(items[index].imagePath) ,
-                    text: items[index].text,
-                  ),
-                );
-              }
-          ),
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 16.0,horizontal: 8),
+      child: SizedBox(
+        height: 200,
+        width: 200,
+        child: ListView.builder(
+            // physics: const NeverScrollableScrollPhysics(),
+            itemCount: 4,
+            itemBuilder: (context, index) {
+              return  Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 10),
+                child: HomeItem(
+                  num: 2.8,
+                  imagePath: AssetImage(items[index].imagePath) ,
+                  text: items[index].text,
+                ),
+              );
+            }
         ),
       ),
     );
