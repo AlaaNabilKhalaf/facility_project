@@ -4,7 +4,7 @@ import '../../../../../constants.dart';
 import '../../../../../core/utilies/styles.dart';
 
 class WaterContent extends StatelessWidget {
-   WaterContent({Key? key}) : super(key: key);
+   WaterContent({super.key});
 
   @override
   Widget build(BuildContext context) {

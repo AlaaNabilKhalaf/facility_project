@@ -1,5 +1,7 @@
+import 'package:facility/features/home/views/home_and_services.dart';
 import 'package:flutter/material.dart';
 import 'package:dot_navigation_bar/dot_navigation_bar.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../constants.dart';
 import '../../setting/presentation/views/setting_view.dart';
@@ -18,7 +20,7 @@ class BottomNavBarForHome extends StatefulWidget {
 class _BottomNavBarState extends State<BottomNavBarForHome> with TickerProviderStateMixin {
   int currentIndex = 0;
   final List<Widget> _tabs =  [
-    const HomeScreen(),
+    const HomeAndServices(),
     const ServicesScreen(),
     const DiscoverScreen(),
     const SettingView()
@@ -36,9 +38,9 @@ class _BottomNavBarState extends State<BottomNavBarForHome> with TickerProviderS
       extendBody: true,
       body: _tabs[currentIndex],
       bottomNavigationBar: Padding(
-        padding: const EdgeInsets.only(bottom: 10),
+        padding: const EdgeInsets.only(bottom: 5),
         child: DotNavigationBar(
-          marginR: const EdgeInsets.symmetric(horizontal: 20,vertical: 24.9),
+          marginR:  EdgeInsets.symmetric(horizontal: 14.w,vertical: 19.h),
           boxShadow: [
             BoxShadow(
               color: Colors.grey.shade400,
@@ -53,7 +55,7 @@ class _BottomNavBarState extends State<BottomNavBarForHome> with TickerProviderS
               currentIndex = index;
             });
           },
-          margin: const EdgeInsets.only(left: 10, right: 10),
+         // margin: const EdgeInsets.only(left: 10, right: 10),
           // currentIndex: _SelectedTab.values.indexOf(_selectedTab),
           unselectedItemColor: Colors.grey[300],
           splashBorderRadius: 50,

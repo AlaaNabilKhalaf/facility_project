@@ -10,7 +10,7 @@ class Phone_Directory extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBarButtom2(text: "Phone Directory",),
+        appBar: AppBarButton2(text: "Phone Directory",),
         body: ListView(
           scrollDirection: Axis.horizontal,
           children: [

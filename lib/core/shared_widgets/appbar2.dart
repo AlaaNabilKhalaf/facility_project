@@ -1,24 +1,22 @@
-
 import 'package:flutter/material.dart';
-
 import '../../constants.dart';
 import '../utilies/styles.dart';
 
-class AppBarButtom2 extends StatefulWidget  implements PreferredSizeWidget {
+class AppBarButton2 extends StatefulWidget  implements PreferredSizeWidget {
 
   final String text;
   Widget? columnText;
-   AppBarButtom2({super.key, required this.text,this.columnText});
+   AppBarButton2({super.key, required this.text,this.columnText});
 
   @override
-  State<AppBarButtom2> createState() => _AppBarButtom2State();
+  State<AppBarButton2> createState() => _AppBarButton2State();
 
   @override
   // TODO: implement preferredSize
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }
 
-class _AppBarButtom2State extends State<AppBarButtom2> {
+class _AppBarButton2State extends State<AppBarButton2> {
   @override
   Widget build(BuildContext context) {
     return AppBar(

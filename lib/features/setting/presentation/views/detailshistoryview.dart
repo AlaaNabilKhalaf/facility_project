@@ -13,7 +13,7 @@ var inputController=TextEditingController();
     return SafeArea(
 
       child: Scaffold(
-        appBar: AppBarButtom2(text: 'Request Details',),
+        appBar: AppBarButton2(text: 'Request Details',),
         body: History_Details_Body(inputController: inputController),
       ),
     );

@@ -12,7 +12,7 @@ class Community_Info extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBarButtom2(
+        appBar: AppBarButton2(
           text: "Community Info",
         ),
         body: Padding(

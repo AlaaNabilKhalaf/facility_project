@@ -12,7 +12,7 @@ class New_Gate extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         resizeToAvoidBottomInset: false,
-        appBar: AppBarButtom2(text: 'Gate Notification',),
+        appBar: AppBarButton2(text: 'Gate Notification',),
         body:  const Padding(
           padding: EdgeInsets.all(8.0),
           child: Create_New_Gate(),

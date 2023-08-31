@@ -10,7 +10,7 @@ class ChatView extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBarButtom2(text: 'Message center',),
+        appBar: AppBarButton2(text: 'Message center',),
         body: const ChatBody(),
       ),
     );

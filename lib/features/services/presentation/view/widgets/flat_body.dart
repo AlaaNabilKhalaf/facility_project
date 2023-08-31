@@ -16,7 +16,7 @@ class FlatBody extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            ImageStack(),
+            const ImageStack(),
             const Text(
               "Our Services",
               style: Styles.textStyle20,

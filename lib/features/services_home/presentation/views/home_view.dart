@@ -10,7 +10,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBarButtom2(text: 'Pay a bill',),
+        appBar: AppBarButton2(text: 'Pay a bill',),
         body: const HomeBody(),
       ),
     );

@@ -47,7 +47,7 @@ class _Tasareeh_ViewState extends State<Tasareeh_View> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(child: Scaffold(
-      appBar: AppBarButtom2(text: "Visitor",),
+      appBar: AppBarButton2(text: "Visitor",),
       body: Padding(
         padding: const EdgeInsets.all(10.0),
         child: ListView(

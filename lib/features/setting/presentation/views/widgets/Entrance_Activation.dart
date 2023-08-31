@@ -11,7 +11,7 @@ class Enterance_Activation extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBarButtom2(text: "Entrance Activation",),
+        appBar: AppBarButton2(text: "Entrance Activation",),
         body: Column(
           children: [
             SizedBox(height: 20.h,),

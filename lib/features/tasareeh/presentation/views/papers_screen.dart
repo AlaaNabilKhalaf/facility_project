@@ -1,6 +1,5 @@
 import 'package:facility/core/shared_widgets/appbar2.dart';
 import 'package:facility/features/tasareeh/presentation/views/widgets/tasareeh.dart';
-import 'package:facility/features/tasareeh/presentation/views/widgets/wehdaDetails.dart';
 import 'package:facility/features/tasareeh/presentation/views/workers_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -13,11 +12,11 @@ final bool paperScreenChaker ;
   Widget build(BuildContext context) {
     return  SafeArea(
       child: Scaffold(
-        appBar: AppBarButtom2(text: 'Permissions',),
+        appBar: AppBarButtom2(text: 'Permeation',),
         body: Column(
           children: [
             SizedBox(
-              child: Container(
+              child: paperScreenChaker ? Container(
                 margin: const EdgeInsets.all(20),
                 padding: const EdgeInsets.all(10),
                 width: double.infinity,
@@ -40,15 +39,15 @@ final bool paperScreenChaker ;
                     ),),
                   ],
                 ),
-              )
+              ) : SizedBox(height: 10.h,) ,
             ),
             GestureDetector(
               onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>  WehdaDetails()));
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>  WorkersScreen()));
               },
               child: Container(
-                margin: EdgeInsets.all(10),
-                padding: const EdgeInsets.all(10),
+                margin: const EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.all(15),
                 width: 340.w,
                 height: 50.h,
                 decoration: BoxDecoration(
@@ -61,11 +60,11 @@ final bool paperScreenChaker ;
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Image.asset('assets/icons/Group 177.png' ),
+                    Image.asset(paperScreenChaker ? 'assets/icons/Group 177.png' : 'assets/icons/Group 1771.png'),
 
-                    Text('Workers Permission'
+                    Text('Workers Permeation (50 pound)'
                     ,style: TextStyle(
-                       color: CupertinoColors.black ,
+                       color: paperScreenChaker? Colors.grey : CupertinoColors.black ,
                        fontSize: 17
                       ),),
                   ],
@@ -77,8 +76,8 @@ final bool paperScreenChaker ;
                 Navigator.push(context, MaterialPageRoute(builder: (context)=> const Tasareeh_View()));
               },
               child: Container(
-                margin: EdgeInsets.all(10),
-                padding: const EdgeInsets.all(10),
+                margin: const EdgeInsets.all(20),
+                padding: const EdgeInsets.all(15),
 
                 width: 340.w,
                 height: 50.h,
@@ -94,69 +93,7 @@ final bool paperScreenChaker ;
                   children: [
                     Image.asset( 'assets/icons/Group 1771.png'),
 
-                    const Text('Visitor permission'
-                      ,style: TextStyle(
-                          color: CupertinoColors.black ,
-                          fontSize: 17
-                      ),),
-                  ],
-                ),
-              ),
-            ),
-            GestureDetector(
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=> const Tasareeh_View()));
-              },
-              child: Container(
-                padding: const EdgeInsets.all(10),
-                margin: EdgeInsets.all(10),
-
-                width: 340.w,
-                height: 50.h,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    border: Border.all(
-                        width: 1,
-                        color: Colors.grey.shade300
-                    )
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Image.asset( 'assets/icons/Group 1771.png'),
-
-                    const Text('Other'
-                      ,style: TextStyle(
-                          color: CupertinoColors.black ,
-                          fontSize: 17
-                      ),),
-                  ],
-                ),
-              ),
-            ),
-            GestureDetector(
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=> const Tasareeh_View()));
-              },
-              child: Container(
-                padding: const EdgeInsets.all(10),
-                margin: EdgeInsets.all(10),
-
-                width: 340.w,
-                height: 50.h,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    border: Border.all(
-                        width: 1,
-                        color: Colors.grey.shade300
-                    )
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Image.asset( 'assets/icons/Group 1771.png'),
-
-                    const Text('Delivery Permission'
+                    const Text('Visitor Permeation'
                       ,style: TextStyle(
                           color: CupertinoColors.black ,
                           fontSize: 17

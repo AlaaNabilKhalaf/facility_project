@@ -1,11 +1,9 @@
 import 'package:facility/constants.dart';
 import 'package:facility/features/pay_history/presentation/views/widgets/list_view_pay.dart';
-import 'package:facility/features/pay_history/presentation/views/widgets/pay_item.dart';
 import 'package:facility/features/services_home/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../services_home/presentation/views/widgets/search.dart';
-import 'list_view.dart';
 
 class HistoryBody extends StatefulWidget {
   const HistoryBody({super.key});
@@ -35,9 +33,9 @@ class _HistoryBodyState extends State<HistoryBody> {
                   border: Border.all(color: kPrimaryColor)),
               child: GestureDetector(
                 onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeView()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>const HomeView()));
                 },
-                child: Text(
+                child: const Text(
                   'Back to home',
                   style: TextStyle(color: kPrimaryColor),
                 ),

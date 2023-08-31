@@ -19,7 +19,7 @@ class _Add_Request_ViewState extends State<Add_Request_View> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBarButtom2(text: "Add Request",),
+        appBar: AppBarButton2(text: "Add Request",),
         body: const Add_Request_Body()
       ),
     );

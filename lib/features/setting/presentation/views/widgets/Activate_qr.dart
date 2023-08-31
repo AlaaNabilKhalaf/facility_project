@@ -16,7 +16,7 @@ class Activate_Qr extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBarButtom2(text: "Activate QR code ",),
+        appBar: AppBarButton2(text: "Activate QR code ",),
         body: Padding(
           padding: const EdgeInsets.all(12.0),
           child: ListView(

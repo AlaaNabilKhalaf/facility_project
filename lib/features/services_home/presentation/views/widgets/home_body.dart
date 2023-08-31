@@ -9,7 +9,7 @@ import 'image_stack.dart';
 import 'list_myflat.dart';
 
 class HomeBody extends StatefulWidget {
-  const HomeBody({Key? key}) : super(key: key);
+  const HomeBody({super.key});
 
   @override
   State<HomeBody> createState() => _HomeBodyState();
@@ -19,7 +19,7 @@ class _HomeBodyState extends State<HomeBody> {
   @override
   Widget build(BuildContext context) {
     return CustomScrollView(
-      physics: BouncingScrollPhysics(),
+      physics: const BouncingScrollPhysics(),
       slivers: [
         SliverToBoxAdapter(
        child: Padding(
@@ -27,36 +27,36 @@ class _HomeBodyState extends State<HomeBody> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children:  [
-              Search(
+              const Search(
                 text: 'Search for service, offer',
               ),
               // SizedBox(
               //   height: 10,
               // ),
-              ImageStack(),
-              SizedBox(
+              const ImageStack(),
+              const SizedBox(
                 height: 10,
               ),
               Text(
                 'My Flats',
                 style: Styles.textStyle15.copyWith(fontSize: 20, color: Colors.black,),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               ListFlat(),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Text(
                 'Our Services',
                 style: Styles.textStyle15.copyWith(fontSize: 20 , color: Colors.black),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               ServiceList(),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               // Text(

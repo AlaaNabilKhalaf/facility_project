@@ -19,7 +19,7 @@ final String details;
   Widget build(BuildContext context) {
     return SafeArea(
       child:Scaffold(
-        appBar: AppBarButtom2(text: "Gate notification"),
+        appBar: AppBarButton2(text: "Gate notification"),
        body: Column(
          crossAxisAlignment: CrossAxisAlignment.start,
          children: [

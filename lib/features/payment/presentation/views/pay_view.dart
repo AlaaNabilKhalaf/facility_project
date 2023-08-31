@@ -12,7 +12,7 @@ class PaymentView extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar:  AppBarButtom2(
+        appBar:  AppBarButton2(
         text: '',
         columnText: Column(
           children: [

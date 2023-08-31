@@ -10,7 +10,7 @@ class SuccessView extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBarButtom2(text: 'Payment',),
+        appBar: AppBarButton2(text: 'Payment',),
         body: const SuccessBody(),
       ),
     );

@@ -7,6 +7,16 @@ class AssetData {
     "assets/icons/Rectangle 213.png",
     "assets/icons/Rectangle 216.png"
   ];
+
+
+  static const newsBodyList = [
+    "assets/images/Rectangle 201.png",
+    "assets/images/Rectangle 204.png",
+    "assets/images/Rectangle 207.png",
+    "assets/images/Rectangle 207.png"
+  ];
+
+
   static const sponsers = [
     "assets/icons/download__2_-removebg-preview.png",
     "assets/icons/unnamed__1_-removebg-preview.png",

@@ -2,12 +2,11 @@ import 'package:facility/features/services_home/presentation/views/widgets/water
 import 'package:flutter/material.dart';
 
 import '../../../../constants.dart';
-import '../../../../core/shared_widgets/appbar2.dart';
 import '../../../../core/utilies/styles.dart';
 import '../../../services/presentation/view/widgets/appBar4.dart';
 
 class WaterPill extends StatefulWidget {
-  const WaterPill({Key? key}) : super(key: key);
+  const WaterPill({super.key});
 
   @override
   State<WaterPill> createState() => _WaterPillState();

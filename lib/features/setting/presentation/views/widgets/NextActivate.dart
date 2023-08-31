@@ -27,7 +27,7 @@ class _Next_ActivateState extends State<Next_Activate> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-      appBar: AppBarButtom2(text: "Activate QR code",),
+      appBar: AppBarButton2(text: "Activate QR code",),
       body: Padding(
         padding: const EdgeInsets.all(13.0),
         child: ListView(

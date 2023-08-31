@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
     return SafeArea(
       child:  Scaffold(
         backgroundColor: lIGHT_BACKGROUND ,
-                   appBar: AppBarForHomePage(text: 'Compound Name',titleBool: true
+        appBar: AppBarForHomePage(text: 'Compound Name',titleBool: true
   ,),
         body: const Padding(
           padding: EdgeInsets.all(10.0),

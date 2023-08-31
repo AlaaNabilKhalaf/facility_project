@@ -7,7 +7,7 @@ import '../../../../../core/shared_widgets/text_field.dart';
 import '../../../../../core/utilies/styles.dart';
 
 class WaterPayBody extends StatefulWidget {
-  const WaterPayBody({Key? key}) : super(key: key);
+  const WaterPayBody({super.key});
 
   @override
   State<WaterPayBody> createState() => _WaterPayBodyState();

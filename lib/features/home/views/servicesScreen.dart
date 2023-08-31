@@ -13,7 +13,9 @@ class ServicesScreen extends StatelessWidget {
     return  Scaffold(
       backgroundColor: lIGHT_BACKGROUND ,
       appBar: AppBarForHomePage(text: 'Services',titleBool: true,),
-      body: HomeServiceList () ,
+      body: HomeServiceList (
+        theHeight: 510,
+      ) ,
     );
   }
 }

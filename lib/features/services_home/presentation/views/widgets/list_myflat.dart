@@ -6,7 +6,7 @@ import 'list_model.dart';
 
 
 class ListFlat extends StatelessWidget {
-   ListFlat({Key? key}) : super(key: key);
+   ListFlat({super.key});
 
   final List<ListItemModel> items = [
     ListItemModel(text: "Rehab", imagePath: "assets/images/my_flat/flat.png"  ),
@@ -23,9 +23,9 @@ class ListFlat extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return  Padding(
-                    padding: EdgeInsets.only(right: 30),
+                    padding: const EdgeInsets.only(right: 30),
                     child: GestureDetector(
-                      onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (context)=>FlatView())),
+                      onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (context)=>const FlatView())),
                       child: HomeItem(
                         num: 1.2,
                         imagePath: AssetImage(items[index].imagePath) ,
