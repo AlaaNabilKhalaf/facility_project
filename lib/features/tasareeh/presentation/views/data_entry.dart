@@ -15,7 +15,7 @@ class DataEntry extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBarButtom2(text: "Data Entry",),
+        appBar: AppBarButton2(text: "Data Entry",),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [

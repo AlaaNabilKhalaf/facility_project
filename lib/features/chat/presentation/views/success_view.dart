@@ -9,7 +9,7 @@ class ChatSuccess extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBarButtom2(text: 'Message center',),
+      appBar: AppBarButton2(text: 'Message center',),
       body: const SucessBody(),
     );
   }

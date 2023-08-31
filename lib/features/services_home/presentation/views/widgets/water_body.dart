@@ -2,13 +2,12 @@ import 'package:facility/core/shared_widgets/custom_buttom.dart';
 import 'package:facility/core/utilies/styles.dart';
 import 'package:facility/features/services_home/presentation/views/pay_water.dart';
 import 'package:facility/features/services_home/presentation/views/widgets/water_content.dart';
-import 'package:facility/features/services_home/presentation/views/widgets/water_pay_body.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../constants.dart';
 
 class WaterBody extends StatefulWidget {
-  const WaterBody({Key? key}) : super(key: key);
+  const WaterBody({super.key});
 
   @override
   State<WaterBody> createState() => _WaterBodyState();
@@ -32,14 +31,14 @@ class _WaterBodyState extends State<WaterBody> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Image.asset('assets/icons/Rectangle 201.png'),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
-                    Text(
+                    const Text(
                       'Please pay',
                       style: Styles.textStyleNew12,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Text(
@@ -59,11 +58,11 @@ class _WaterBodyState extends State<WaterBody> {
               width: double.infinity,
               color: const Color(0xFFF8F8F8),
               child: Padding(
-                padding: EdgeInsets.all(15.0),
+                padding: const EdgeInsets.all(15.0),
                 child: WaterContent(),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             // SizedBox(
@@ -75,7 +74,7 @@ class _WaterBodyState extends State<WaterBody> {
               text: 'Add to bill pay checkout',
               func: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => PillPay()));
+                    MaterialPageRoute(builder: (context) => const PillPay()));
               },
               width: double.infinity,
             ),

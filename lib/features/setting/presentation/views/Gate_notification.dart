@@ -14,7 +14,7 @@ class Empty_Gate_Notification_View extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-appBar: AppBarButtom2(text: 'Gate Notification',),
+appBar: AppBarButton2(text: 'Gate Notification',),
         body: const EmptyNotificationListView()
 
       ),

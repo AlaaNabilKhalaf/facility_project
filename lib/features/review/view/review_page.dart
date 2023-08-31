@@ -13,7 +13,7 @@ class ReviewPage extends StatelessWidget {
       child: Scaffold(
 
 
-        appBar: AppBarButtom2(text: 'Review',),
+        appBar: AppBarButton2(text: 'Review',),
         backgroundColor: lIGHT_BACKGROUND,
         body: const  SingleChildScrollView(child: ReviewCustomTabBar()),
       ),

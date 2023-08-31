@@ -11,7 +11,7 @@ var details=TextEditingController();
     return SafeArea(
 
         child: Scaffold(
-          appBar: AppBarButtom2(text: "Contact Us",),
+          appBar: AppBarButton2(text: "Contact Us",),
           body: Padding(
             padding: const EdgeInsets.all(10),
             child: ContactusBody(details: details),

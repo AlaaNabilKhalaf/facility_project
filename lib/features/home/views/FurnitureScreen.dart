@@ -29,7 +29,7 @@ final List<bool> colorBool = [
       child: Scaffold(
         backgroundColor: lIGHT_BACKGROUND ,
 
-        appBar: AppBarButtom2(
+        appBar: AppBarButton2(
           text: 'Furniture',
         ),
         body: Padding(

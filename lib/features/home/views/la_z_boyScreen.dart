@@ -20,7 +20,7 @@ class _LaZBoyScreenState extends State<LaZBoyScreen> {
     return SafeArea(
             child: Scaffold(
               backgroundColor: lIGHT_BACKGROUND,
-              appBar: AppBarButtom2(
+              appBar: AppBarButton2(
           text: 'La-Z-boy',
         ),
         body:  Padding(

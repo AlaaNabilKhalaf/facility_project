@@ -12,7 +12,7 @@ final bool paperScreenChaker ;
   Widget build(BuildContext context) {
     return  SafeArea(
       child: Scaffold(
-        appBar: AppBarButtom2(text: 'Permeation',),
+        appBar: AppBarButton2(text: 'Permeation',),
         body: Column(
           children: [
             SizedBox(

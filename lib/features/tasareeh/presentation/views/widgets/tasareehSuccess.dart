@@ -13,7 +13,7 @@ class Tasreeh_Success extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBarButtom2(text: "Success",),
+        appBar: AppBarButton2(text: "Success",),
         body: Padding(
           padding: const EdgeInsets.all(12.0),
           child: Column(

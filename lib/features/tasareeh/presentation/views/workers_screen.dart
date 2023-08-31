@@ -14,7 +14,7 @@ class WorkersScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(child:  Scaffold(
-      appBar: AppBarButtom2(text: 'Workers Number',),
+      appBar: AppBarButton2(text: 'Workers Number',),
       body: Column(
         children: [
           Container(

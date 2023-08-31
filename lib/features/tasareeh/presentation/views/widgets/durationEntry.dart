@@ -23,7 +23,7 @@ class _DurationEntryState extends State<DurationEntry> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-      appBar: AppBarButtom2(text: 'Duration Entry',),
+      appBar: AppBarButton2(text: 'Duration Entry',),
         body: Padding(
           padding: const EdgeInsets.all(10.0),
           child: ListView(

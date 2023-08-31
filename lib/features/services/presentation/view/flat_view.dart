@@ -4,9 +4,7 @@ import 'package:facility/features/services/presentation/view/widgets/flat_body.d
 import 'package:flutter/material.dart';
 
 import '../../../../constants.dart';
-import '../../../../core/shared_widgets/appbar2.dart';
 import '../../../../core/utilies/styles.dart';
-import '../../../pay_history/presentation/views/widgets/app_bar.dart';
 class FlatView extends StatelessWidget {
   const FlatView({super.key});
 

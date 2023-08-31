@@ -25,7 +25,7 @@ class _PayWayState extends State<PayWay> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBarButtom2(text: 'Duration Entry',),
+        appBar: AppBarButton2(text: 'Duration Entry',),
         body: Padding(
           padding: const EdgeInsets.all(8.0),
           child: ListView(

@@ -1,18 +1,16 @@
+import 'package:facility/features/News/views/news_category.dart';
 import 'package:facility/features/home/views/moreScreen.dart';
 import 'package:facility/features/home/widgets/smallWidgets/Grid_itemServices.dart';
 import 'package:facility/features/services_home/presentation/views/widgets/bottom_nav.dart';
 import 'package:facility/features/tasareeh/presentation/views/widgets/durationEntry.dart';
-import 'package:facility/features/tasareeh/presentation/views/widgets/tasareeh.dart';
-import 'package:facility/features/services_home/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../review/view/review_page.dart';
-import '../../setting/presentation/animation/fadeanimation.dart';
 
 
 
 class HomeServiceList extends StatelessWidget {
-   HomeServiceList({Key? key,}) : super(key: key);
+   HomeServiceList({super.key,});
    final List nextScreen = [
      const BottomNavBar(),
      const MoreScreen(),
@@ -21,8 +19,8 @@ class HomeServiceList extends StatelessWidget {
      const MoreScreen(),
      const MoreScreen(),
      const ReviewPage(),
-     DurationEntry(),
-     const MoreScreen(),
+     const DurationEntry(),
+     const NewsCategory(),
      const MoreScreen(),
    ];
   @override

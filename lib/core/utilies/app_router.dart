@@ -1,12 +1,4 @@
-
-
-import 'package:facility/features/services_home/presentation/views/pay_water.dart';
-import 'package:facility/features/services_home/presentation/views/water_pill.dart';
-import 'package:facility/features/services_home/presentation/views/widgets/water_pay_body.dart';
-import 'package:facility/features/splash/splash_screen1.dart';
 import 'package:go_router/go_router.dart';
-
-import '../../features/auth/presentation/views/register_view.dart';
 import '../../features/auth/presentation/views/sign_up_view.dart';
 import '../../features/auth/presentation/views/verify_view.dart';
 import '../../features/home/views/homePage.dart';
@@ -25,7 +17,7 @@ abstract class AppRouter{
 
     GoRoute(
       path: '/',
-      builder: (context , state) => const HomeView(),
+      builder: (context , state) => const HomePage(),
     ),
 
     GoRoute(

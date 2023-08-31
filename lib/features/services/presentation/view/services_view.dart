@@ -10,7 +10,7 @@ class ServicesView extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
-        appBar: AppBarButtom2(text: 'Our services',),
+        appBar: AppBarButton2(text: 'Our services',),
         body: const ServicesBody(),
       ),
     );

@@ -2,10 +2,10 @@ import 'package:facility/features/pay_history/presentation/views/widgets/pay_ite
 import 'package:flutter/material.dart';
 
 class ListPay extends StatelessWidget {
-   ListPay({Key? key}) : super(key: key);
+   ListPay({super.key});
   List<PayItem> paymentList = [
     PayItem(
-      imagePath: AssetImage('assets/images/Icon ionic-ios-water.png'),
+      imagePath: const AssetImage('assets/images/Icon ionic-ios-water.png'),
       title: 'Water',
       text1: 'Madinty',
       text2: '1200.50 EGB',

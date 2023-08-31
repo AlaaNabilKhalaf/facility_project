@@ -15,7 +15,7 @@ class SpecificReview extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBarButtom2(text: 'Review',),
+        appBar: AppBarButton2(text: 'Review',),
         body: SingleChildScrollView(
           child: Column(
             crossAxisAlignment:CrossAxisAlignment.start ,

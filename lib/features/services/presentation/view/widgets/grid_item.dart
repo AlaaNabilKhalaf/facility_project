@@ -9,7 +9,7 @@ class GridItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (context)=>WaterPill())),
+      onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (context)=>const WaterPill())),
       child: HomeItem(
         num: 2.8,
         text: services[index],

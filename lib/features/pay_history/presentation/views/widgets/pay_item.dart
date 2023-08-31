@@ -16,14 +16,13 @@ class PayItem extends StatelessWidget {
   final Function() buttonFunction;
 
   const PayItem(
-      {Key? key,
+      {super.key,
       required this.title,
       required this.text1,
       required this.text2,
       required this.text3,
       required this.buttonText,
-      required this.buttonFunction, required this.imagePath})
-      : super(key: key);
+      required this.buttonFunction, required this.imagePath});
 
   @override
   Widget build(BuildContext context) {
@@ -58,21 +57,21 @@ class PayItem extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(width: 10,),
+          const SizedBox(width: 10,),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text( text1 , style: Styles.textStyle14.copyWith(fontSize: 11, color: kPrimaryColor),),
-              SizedBox(height: 5,),
+              const SizedBox(height: 5,),
               Text( text2 , style: Styles.textStyle14.copyWith(fontWeight: FontWeight.w500),),
-              SizedBox(height: 5,),
+              const SizedBox(height: 5,),
               Text(text3 , style: Styles.textStyle14.copyWith(fontSize: 11 , color: LIGHT_GREY),),
             ],
           ),
           
           Expanded(
             child: CustomButton(
-                backgroundColor: Color(0xFF2AC639),
+                backgroundColor: const Color(0xFF2AC639),
                 text: buttonText,
                 func: buttonFunction,
             ),
