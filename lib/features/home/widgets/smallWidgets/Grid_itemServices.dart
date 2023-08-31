@@ -27,7 +27,7 @@ class Grid_Item_Services extends StatelessWidget {
     "Request Service",
    "Complain",
    "Security",
-   "Property management",
+   "Property\nmanagement",
    "Rating",
    "Permission",
    "News",

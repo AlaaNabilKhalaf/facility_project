@@ -55,7 +55,7 @@ class HomeAndServices extends StatelessWidget {
             ),
           ),
         ),
-        body: const HomeAndServicesBody(),
+        body:  HomeAndServicesBody(),
       ),
     );
   }

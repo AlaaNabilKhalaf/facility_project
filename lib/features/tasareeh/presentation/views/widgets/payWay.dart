@@ -29,7 +29,7 @@ class _PayWayState extends State<PayWay> {
           padding: const EdgeInsets.all(8.0),
           child: ListView(
             children: [
-             Text("Please select your payment method"),
+             const Text("Please select your payment method"),
               SizedBox(height: 10.h,),
               const PaymentMethod(),
               SizedBox(height: 10.h,),
@@ -60,7 +60,8 @@ class _PayWayState extends State<PayWay> {
               CustomButton(backgroundColor: kPrimaryColor, text: 'Confirm',
                   func: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>ConfirmData()));
-                  }, width: double.infinity)
+                  },
+                  width: double.infinity)
 
             ],
           ),

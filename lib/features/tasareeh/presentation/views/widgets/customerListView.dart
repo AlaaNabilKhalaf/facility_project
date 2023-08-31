@@ -56,10 +56,9 @@ class _CustomerListViewState extends State<CustomerListView> {
           ):
           Container(
               padding: EdgeInsets.all(10),
-              height:600.h,
+              height:200.h,
               color: LIGHT_GREY.withOpacity(.1),
-              child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+              child: ListView(
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -104,7 +103,7 @@ class _CustomerListViewState extends State<CustomerListView> {
                     defaultText(type: TextInputType.text,borderWidth: .3,maxLines: 5),
                     SaveAndCancelRow()
 
-                    
+
                   ]
               )
           );

@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../constants.dart';
 import '../widgets/appBarForHomePage.dart';
@@ -13,8 +14,7 @@ class ServicesScreen extends StatelessWidget {
     return  Scaffold(
       backgroundColor: lIGHT_BACKGROUND ,
       appBar: AppBarForHomePage(text: 'Services',titleBool: true,),
-      body: HomeServiceList (
-        theHeight: 510,
+      body: HomeServiceList (theHeight: 510.h,
       ) ,
     );
   }

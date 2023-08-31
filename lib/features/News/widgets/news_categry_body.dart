@@ -7,7 +7,7 @@ class NewsCategoryBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return ListView(
       children: [
       const Padding(
          padding:  EdgeInsets.symmetric(horizontal: 20,vertical: 10),

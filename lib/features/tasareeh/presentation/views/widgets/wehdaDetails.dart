@@ -29,7 +29,7 @@ class _WehdaDetailsState extends State<WehdaDetails> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBarButtom2(text: 'Unit Details',),
+        appBar: AppBarButton2(text: 'Unit Details',),
         body: Padding(
           padding: const EdgeInsets.all(8.0),
           child: ListView(

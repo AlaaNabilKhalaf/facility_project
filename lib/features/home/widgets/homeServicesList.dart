@@ -1,6 +1,8 @@
+import 'package:facility/features/News/views/news_category.dart';
 import 'package:facility/features/home/views/moreScreen.dart';
 import 'package:facility/features/home/widgets/smallWidgets/Grid_itemServices.dart';
 import 'package:facility/features/services_home/presentation/views/widgets/bottom_nav.dart';
+import 'package:facility/features/tasareeh/presentation/views/papers_screen.dart';
 import 'package:facility/features/tasareeh/presentation/views/widgets/durationEntry.dart';
 import 'package:facility/features/tasareeh/presentation/views/widgets/tasareeh.dart';
 import 'package:facility/features/services_home/presentation/views/home_view.dart';
@@ -12,7 +14,9 @@ import '../../setting/presentation/animation/fadeanimation.dart';
 
 
 class HomeServiceList extends StatelessWidget {
-   HomeServiceList({Key? key,}) : super(key: key);
+
+HomeServiceList({required this.theHeight});
+
    final List nextScreen = [
      const BottomNavBar(),
      const MoreScreen(),
@@ -21,16 +25,18 @@ class HomeServiceList extends StatelessWidget {
      const MoreScreen(),
      const MoreScreen(),
      const ReviewPage(),
-     DurationEntry(),
-     const MoreScreen(),
+     const PaperScreen(paperScreenChaker: false),
+     const NewsCategory(),
      const MoreScreen(),
    ];
+
+   double? theHeight;
   @override
   Widget build(BuildContext context) {
     return  Padding(
         padding: const EdgeInsets.symmetric(vertical: 15.0,horizontal: 10),
         child: SizedBox(
-          height: 510.h,
+          height:theHeight,
           child: GridView.builder(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,

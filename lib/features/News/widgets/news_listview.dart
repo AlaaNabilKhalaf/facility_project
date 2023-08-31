@@ -30,9 +30,9 @@ final List<String> newsAddress = [
               Navigator.push(context, MaterialPageRoute(builder: (context)=> TheFinalNews(title: newsAddress[index])));
             },
           child: Container(
-            margin: const EdgeInsets.symmetric(vertical: 8,horizontal: 20),
+            margin: const EdgeInsets.all(10),
             padding: const EdgeInsets.all(20),
-            height: 110.h,width: double.infinity,
+            height: 132.h,width: double.infinity,
             decoration: BoxDecoration(
                 color: Colors.grey.shade200,
                 borderRadius: BorderRadius.circular(10)
