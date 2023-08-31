@@ -1,5 +1,5 @@
-
 import 'package:facility/constants.dart';
+import 'package:facility/core/shared_widgets/custom_buttom.dart';
 import 'package:facility/core/shared_widgets/text_field.dart';
 import 'package:facility/core/utilies/styles.dart';
 import 'package:flutter/cupertino.dart';
@@ -16,24 +16,58 @@ class Yes extends StatefulWidget {
 class _YesState extends State<Yes> {
   bool isClicked=false;
   bool isClicked2=false;
+  int currentOption=1;
   @override
   Widget build(BuildContext context) {
+
+
+
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: ListView(
           children: [
+             Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Expanded(
+                    child:ListTile(
+                      title: const Text('Yes'),
+                      leading: Radio(
+                          value:1,
+                          groupValue: currentOption,
+                          onChanged: (value){
+                        setState(() {
+                          currentOption=value as int;
+                        });
+                      }),
+
+                    ),
+                  ),
+                  Expanded(
+                    child:ListTile(
+                      title: const Text('No'),
+                      leading: Radio(value:2, groupValue: currentOption, onChanged: (value){
+                        setState(() {
+                          currentOption=value as int;
+                        });
+                      }),
+
+                    ),
+                  ),
+                ],
+                ),
             const Text('Please enter Customers Data'),
             SizedBox(height: 10.h,),
             isClicked==false?
             Container(
               padding: EdgeInsets.all(10),
               height: 70,
-              decoration: BoxDecoration(
-                  color: Colors.transparent,
-                  border: Border.all(color: Colors.black),
-                  borderRadius: BorderRadius.circular(10)
-              ),
+            decoration: BoxDecoration(
+              color: Colors.transparent,
+              border: Border.all(color: Colors.black),
+              borderRadius: BorderRadius.circular(10)
+            ),
               child:  Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -49,7 +83,7 @@ class _YesState extends State<Yes> {
             Container(
               padding: EdgeInsets.all(10),
               height:550.h,
-              color: LIGHT_GREY.withOpacity(.1),
+            color: LIGHT_GREY.withOpacity(.1),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -74,7 +108,7 @@ class _YesState extends State<Yes> {
                   const Text("ID Number"),
                   SizedBox(height: 5.h,),
                   defaultText(type: TextInputType.text,borderWidth: .3),
-                  SizedBox(height: 10.h,),
+SizedBox(height: 10.h,),
                   defaultText(type: TextInputType.text,borderWidth: 1,suffix: Icons.upload_rounded,hint: "Upload your ID")
                   ,SizedBox(height: 10.h,),
                   Text("Reason for visit"),
@@ -99,7 +133,6 @@ class _YesState extends State<Yes> {
 
             ),
             SizedBox(height:20.h,),
-
 
             isClicked2==false?
             Container(

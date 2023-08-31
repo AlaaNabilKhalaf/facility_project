@@ -23,7 +23,7 @@ class Grid_Item_Services extends StatelessWidget {
    "Security",
    "Property management",
    "Rating",
-   "Permeation",
+   "Permission",
    "News",
    "Procedures",
   ];
