@@ -2,8 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class FinalNewsBody extends StatelessWidget {
-  const FinalNewsBody({super.key});
-
+  const FinalNewsBody({super.key,
+  required this.image
+  });
+final String image ;
   @override
   Widget build(BuildContext context) {
     return  SingleChildScrollView(
@@ -17,7 +19,7 @@ class FinalNewsBody extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10)
               ),
-              child: Image.asset("assets/homeImages/Mask Group 62222.png",fit: BoxFit.fill,),
+              child: Image.asset(image,fit: BoxFit.fill,),
             ),
             const SizedBox(height: 15,),
             const Text("""Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.

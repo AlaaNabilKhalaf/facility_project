@@ -17,7 +17,7 @@ class NewsCategoryBody extends StatelessWidget {
           ),),
        ),
         SizedBox(
-            height: 400.h,
+            height: 550.h,
             child:  NewsCategoryList())
 
 

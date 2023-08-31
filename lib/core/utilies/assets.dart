@@ -13,7 +13,7 @@ class AssetData {
     "assets/images/Rectangle 201.png",
     "assets/images/Rectangle 204.png",
     "assets/images/Rectangle 207.png",
-        "assets/images/Rectangle 207.png"
+    "assets/images/Rectangle 207.png"
   ];
 
 

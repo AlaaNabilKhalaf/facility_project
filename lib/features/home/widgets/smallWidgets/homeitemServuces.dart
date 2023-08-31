@@ -15,8 +15,10 @@ class HomeItemServices extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 2.6/1.3,
       child: Container(
+
         padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
         decoration:  BoxDecoration(
+          color: lIGHT_BACKGROUND,
           shape: BoxShape.rectangle,
           border: Border.all(
             color: LIGHT_GREY,

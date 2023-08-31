@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utilies/assets.dart';
+import '../../../../constants.dart';
 import 'homeitemServuces.dart';
 
 class Grid_Item_Services extends StatelessWidget {
@@ -9,9 +10,14 @@ class Grid_Item_Services extends StatelessWidget {
   int index=0;
   @override
   Widget build(BuildContext context) {
-    return HomeItemServices(
-      text: services[index],
-      imagePath: AssetImage(AssetData.homeServices1[index],),
+    return Container(
+      decoration: BoxDecoration(
+        color: lIGHT_BACKGROUND
+      ),
+      child: HomeItemServices(
+        text: services[index],
+        imagePath: AssetImage(AssetData.homeServices1[index],),
+      ),
     );
   }
 

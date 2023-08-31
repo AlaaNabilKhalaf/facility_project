@@ -5,12 +5,14 @@ import 'package:facility/features/services_home/presentation/views/widgets/botto
 import 'package:facility/features/tasareeh/presentation/views/widgets/durationEntry.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../../constants.dart';
 import '../../review/view/review_page.dart';
 
-
-
 class HomeServiceList extends StatelessWidget {
-   HomeServiceList({super.key,});
+   HomeServiceList({super.key,
+   required this.theHeight
+   });
+   final double theHeight ;
    final List nextScreen = [
      const BottomNavBar(),
      const MoreScreen(),
@@ -26,12 +28,16 @@ class HomeServiceList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Padding(
-        padding: const EdgeInsets.symmetric(vertical: 15.0,horizontal: 10),
-        child: SizedBox(
-          height: 510.h,
+        padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 5),
+        child: Container(
+          height: theHeight.h,
+
+          decoration: BoxDecoration(
+            color: lIGHT_BACKGROUND
+          ),
           child: GridView.builder(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
+                crossAxisCount: 2,childAspectRatio: 1.3
               ),
               itemCount:10 ,
               itemBuilder: (context , index)=>
