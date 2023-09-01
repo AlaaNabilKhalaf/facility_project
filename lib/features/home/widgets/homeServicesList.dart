@@ -18,7 +18,7 @@ class HomeServiceList extends StatelessWidget {
 HomeServiceList({required this.theHeight});
 
    final List nextScreen = [
-     const BottomNavBar(),
+     const HomeView(),
      const MoreScreen(),
      const MoreScreen(),
      const MoreScreen(),

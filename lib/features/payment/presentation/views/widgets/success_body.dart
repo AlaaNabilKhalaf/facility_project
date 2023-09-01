@@ -23,7 +23,7 @@ class SuccessBody extends StatelessWidget {
             text: 'Done',
             func: () {},
             width: double.infinity,
-            height: MediaQuery.of(context).size.height / 14,
+            // height: MediaQuery.of(context).size.height / 14,
           )
         ],
       ),

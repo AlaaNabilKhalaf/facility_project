@@ -7,7 +7,7 @@ class ServicesBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 16.0),
+      padding: const EdgeInsets.symmetric(vertical: 16.0,horizontal: 2 ),
       child: GridView.builder(
         physics: const NeverScrollableScrollPhysics(),
           shrinkWrap: true,
@@ -17,7 +17,7 @@ class ServicesBody extends StatelessWidget {
           itemCount: 6,
           itemBuilder: (context , index)=>
               Padding(
-        padding: const EdgeInsets.only(right: 8.0,bottom: 8),
+        padding: const EdgeInsets.all(8),
         child: GridItem(index: index,),
       )
 

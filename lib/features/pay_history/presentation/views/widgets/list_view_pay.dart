@@ -38,31 +38,28 @@ class ListPay extends StatelessWidget {
       text1: 'Madinty',
       text2: '1200.50 EGB',
       text3: 'January 16, 2022, 04:35 PM',
-      buttonText: 'success',
+      buttonText: 'Success',
       buttonFunction: () { },
     ),
   ];
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(20),
-      child: ListView.builder(
-        itemCount: paymentList.length,
-        itemBuilder: (context, index) {
-          return PayItem(
-            title: paymentList[index].title,
-            text1: paymentList[index].text1,
-            text2: paymentList[index].text2,
-            text3: paymentList[index].text3,
-            buttonText: paymentList[index].buttonText,
-            buttonFunction: () {
-              // Handle button click for each item
-            },
-            imagePath: paymentList[index].imagePath,
-          );
-        },
-      ),
+    return ListView.builder(
+      itemCount: paymentList.length,
+      itemBuilder: (context, index) {
+        return PayItem(
+          title: paymentList[index].title,
+          text1: paymentList[index].text1,
+          text2: paymentList[index].text2,
+          text3: paymentList[index].text3,
+          buttonText: paymentList[index].buttonText,
+          buttonFunction: () {
+            // Handle button click for each item
+          },
+          imagePath: paymentList[index].imagePath,
+        );
+      },
     );
   }
 }

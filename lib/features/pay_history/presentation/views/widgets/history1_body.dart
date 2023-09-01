@@ -17,14 +17,16 @@ class _HistoryBodyState extends State<HistoryBody> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Padding(
-        padding: const EdgeInsets.all(20.0),
+        padding: const EdgeInsets.symmetric(horizontal: 8.0 , vertical: 20),
         child: Column(
           children: [
             const Search(text: 'Search for a specific payment'),
             SizedBox(
-                height: MediaQuery.of(context).size.height, child: ListPay()),
+                height: MediaQuery.of(context).size.height*.7, child: ListPay()),
             Container(
               width: double.infinity,
+              height: MediaQuery.of(context).size.height/16,
+
               alignment: Alignment.center,
               padding: const EdgeInsets.symmetric( horizontal: 40 , vertical: 8),
               decoration: BoxDecoration(
@@ -37,8 +39,7 @@ class _HistoryBodyState extends State<HistoryBody> {
                 },
                 child: const Text(
                   'Back to home',
-                  style: TextStyle(color: kPrimaryColor),
-                ),
+                    style : TextStyle(color: kPrimaryColor,fontSize: 20)                ),
               ),
             ),
           ],

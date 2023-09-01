@@ -27,7 +27,7 @@ class PayItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(20.0),
+      padding: const EdgeInsets.symmetric(vertical: 16.0),
       child: Row(
         // mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
@@ -70,10 +70,15 @@ class PayItem extends StatelessWidget {
           ),
           
           Expanded(
-            child: CustomButton(
-                backgroundColor: const Color(0xFF2AC639),
-                text: buttonText,
-                func: buttonFunction,
+            child: Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: CustomButton(
+                height: MediaQuery.of(context).size.height/20,
+                width:MediaQuery.of(context).size.width*.33,
+                  backgroundColor:  buttonText=="Success" ? Color(0xFF2AC639) : buttonText=="Pending" ? kPrimaryColor:Color(0xFFB71C1C),
+                  text: buttonText,
+                  func: buttonFunction,
+              ),
             ),
           ),
         ],

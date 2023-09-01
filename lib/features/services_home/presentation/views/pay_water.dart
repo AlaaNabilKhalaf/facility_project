@@ -13,9 +13,11 @@ class PillPay extends StatefulWidget {
 class _PillPayState extends State<PillPay> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBarButton2(text: 'Water Bill',),
-     body: const WaterPayBody(),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBarButton2(text: 'Water Bill',),
+       body: const WaterPayBody(),
+      ),
     );
   }
 }

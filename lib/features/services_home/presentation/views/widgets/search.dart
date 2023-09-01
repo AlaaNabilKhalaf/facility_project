@@ -9,14 +9,16 @@ class Search extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
+        alignment: Alignment.center,
+        height: 60,
         // width: MediaQuery.of(context).size.width *.7,
         decoration:  BoxDecoration(
           color: Colors.white,
-          borderRadius: const BorderRadius.all(Radius.elliptical(3, 3)),
+          borderRadius: const BorderRadius.all(Radius.elliptical(6, 6)),
           boxShadow: [
             BoxShadow(
-              color: Colors.grey[50]!, // Set the shadow color
-              spreadRadius: 1, // Set the spread radius of the shadow
+              color: Colors.grey[200]!, // Set the shadow color
+              spreadRadius: 10, // Set the spread radius of the shadow
               blurRadius: 10, // Set the blur radius of the shadow
               offset: const Offset(0, 3), // Set the offset of the shadow
             ),

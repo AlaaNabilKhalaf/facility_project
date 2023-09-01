@@ -17,7 +17,7 @@ class _WaterPayBodyState extends State<WaterPayBody> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(20.0),
+      padding: const EdgeInsets.symmetric(vertical: 16.0),
       child: Column(
        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -82,15 +82,18 @@ class _WaterPayBodyState extends State<WaterPayBody> {
           SizedBox(
             height: MediaQuery.of(context).size.height / 14,
           ),
-          CustomButton(
-            // height: MediaQuery.of(context).size.height / 14,
-            backgroundColor: kPrimaryColor,
-            text: 'Pay now',
-            func: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const PaymentView()));
-            },
-            width: double.infinity,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal:  8.0),
+            child: CustomButton(
+              // height: MediaQuery.of(context).size.height / 14,
+              backgroundColor: kPrimaryColor,
+              text: 'Pay now',
+              func: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const PaymentView()));
+              },
+              width: double.infinity,
+            ),
           ),
         ],
       ),

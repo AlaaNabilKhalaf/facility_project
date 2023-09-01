@@ -18,7 +18,7 @@ class _WaterBodyState extends State<WaterBody> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Padding(
-        padding: const EdgeInsets.all(20.0),
+        padding: const EdgeInsets.symmetric(vertical: 16),
         child: Column(
           children: [
             Container(
@@ -54,7 +54,7 @@ class _WaterBodyState extends State<WaterBody> {
               height: 20,
             ),
             Container(
-              height: MediaQuery.of(context).size.height * .55,
+              height: MediaQuery.of(context).size.height * .5,
               width: double.infinity,
               color: const Color(0xFFF8F8F8),
               child: Padding(
@@ -68,15 +68,18 @@ class _WaterBodyState extends State<WaterBody> {
             // SizedBox(
             //   height: MediaQuery.of(context).size.height / 14,
             // ),
-            CustomButton(
-              // height: MediaQuery.of(context).size.height / 14,
-              backgroundColor: kPrimaryColor,
-              text: 'Add to bill pay checkout',
-              func: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const PillPay()));
-              },
-              width: double.infinity,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              child: CustomButton(
+                // height: MediaQuery.of(context).size.height / 14,
+                backgroundColor: kPrimaryColor,
+                text: 'Add to bill pay checkout',
+                func: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const PillPay()));
+                },
+                width: double.infinity,
+              ),
             ),
             const SizedBox(
               height: 14,

@@ -15,6 +15,7 @@ class WaterContent extends StatelessWidget {
 
      Expanded(
        child: ListView.builder(
+         physics: NeverScrollableScrollPhysics(),
          shrinkWrap: true,
             itemCount: headers.length,
             itemBuilder: (context, index) => Padding(

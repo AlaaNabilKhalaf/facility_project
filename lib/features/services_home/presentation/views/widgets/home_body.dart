@@ -1,4 +1,7 @@
 
+import 'dart:developer';
+
+import 'package:facility/features/services/presentation/view/services_view.dart';
 import 'package:facility/features/services_home/presentation/views/widgets/search.dart';
 import 'package:facility/features/services_home/presentation/views/widgets/service_list.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +26,7 @@ class _HomeBodyState extends State<HomeBody> {
       slivers: [
         SliverToBoxAdapter(
        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+          padding: const EdgeInsets.symmetric(horizontal: 16.0,vertical: 16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children:  [
@@ -48,9 +51,23 @@ class _HomeBodyState extends State<HomeBody> {
               const SizedBox(
                 height: 30,
               ),
-              Text(
-                'Our Services',
-                style: Styles.textStyle15.copyWith(fontSize: 20 , color: Colors.black),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Our Services',
+                    style: Styles.textStyle15.copyWith(fontSize: 20 , color: Colors.black),
+                  ),
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>ServicesView()));
+                    },
+                    child: Text(
+                      'See all',
+                      style: Styles.textStyle15.copyWith( color: Colors.black),
+                    ),
+                  ),
+                ],
               ),
               const SizedBox(
                 height: 10,

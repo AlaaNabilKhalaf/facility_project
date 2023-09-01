@@ -15,23 +15,23 @@ class WaterPill extends StatefulWidget {
 class _WaterPillState extends State<WaterPill> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBarButtom4(
-        text: '',
-        columnText: Column(
-          children: [
-            const Text(
-                "Water Pill",style:Styles.textStyle16
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 2.0),
-              child: Text("Details of water bill",style:Styles.textStyle12.copyWith(color:LIGHT_GREY ) ),
-            ),
-          ],
+    return  SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.white,
+        appBar: AppBarButtom4(
+          text: '',
+          columnText: Column(
+            children: [
+              const Text(
+                  "Water Pill",style:Styles.textStyle14
+              ),
+              Text("Details of water bill",style:Styles.textStyle12.copyWith(color:LIGHT_GREY ) ),
+            ],
+
+          ),
         ),
+        body: const WaterBody(),
       ),
-      body: const WaterBody(),
     );
   }
 }

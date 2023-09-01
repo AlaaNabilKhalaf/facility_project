@@ -16,7 +16,7 @@ class _RadioCheck2State extends State<RadioCheck2> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(10.0),
+      padding: const EdgeInsets.symmetric(vertical: 10.0),
       child: Column(
         children: [
           buildRadioItem(1, 'Wallet'),
