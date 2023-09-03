@@ -40,7 +40,7 @@ HomeServiceList({required this.theHeight});
           height:theHeight,
           child: GridView.builder(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
+                crossAxisCount: 2,childAspectRatio: 1.3
               ),
               itemCount:10 ,
               itemBuilder: (context , index)=>

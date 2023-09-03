@@ -1,8 +1,6 @@
 import 'package:facility/core/shared_widgets/appbar2.dart';
-
-import 'package:flutter/cupertino.dart';
+import 'package:facility/features/review/view/review_page.dart';
 import 'package:flutter/material.dart';
-
 import '../../../constants.dart';
 import '../widgets/my_reviews_body.dart';
 
@@ -17,7 +15,9 @@ class MyReviewsScreen extends StatelessWidget {
         appBar: AppBarButton2(text:
           'My Reviews',),
         body: MyReviewsBody(
-          containerColor: kPrimaryColor,
+          fun: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=> const ReviewPage()));
+          },
         ),
       ),
     );

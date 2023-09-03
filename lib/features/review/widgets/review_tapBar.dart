@@ -1,5 +1,7 @@
 import 'package:facility/features/review/view/specific_review.dart';
+import 'package:facility/features/review/view/total_reviews.dart';
 import 'package:facility/features/review/widgets/general_review_screen.dart';
+import 'package:facility/features/review/widgets/my_reviews_body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../constants.dart';
@@ -29,6 +31,28 @@ class _ReviewCustomTabBarState extends State<ReviewCustomTabBar> {
     "Grocery Shop",
     "Request Service",];
 
+  static List<Color> containerColors = [
+    Colors.redAccent.shade100,
+    Colors.blueAccent.shade100,
+    Colors.greenAccent.shade200,
+    Colors.pinkAccent.shade100,
+    Colors.purpleAccent.shade100
+  ];
+  static const  names = [
+    "Loaa Hany",
+    "Alaa Nabil",
+    "Sara Yasser",
+  "Asmaa Ali",
+    "Yara Islam"
+  ];
+
+  static const  containerTexts = [
+    "LA",
+    "AN",
+    "SY",
+    "AA",
+  "YM"];
+
   List widgets=  [
 
    const GeneralReviewScreen(),
@@ -47,12 +71,19 @@ class _ReviewCustomTabBarState extends State<ReviewCustomTabBar> {
 
         SizedBox(
           height: 400.h,width: 360.w,
-          child: GridView.builder(gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+          child: GridView.builder(gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,childAspectRatio: 1.3),
               itemCount: 3,
               itemBuilder: (context , index )=> GestureDetector(
                   onTap: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=> const SpecificReview())
-                    );
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>
+                     TotalReviews(fun: (){
+                       Navigator.push(context, MaterialPageRoute(builder: (context)=> const SpecificReview()));
+                     },
+                     containerColor2: containerColors ,
+                       name: names ,
+                       containerText: containerTexts ,
+                     )
+                    ));
                   },
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 13,vertical:15),
