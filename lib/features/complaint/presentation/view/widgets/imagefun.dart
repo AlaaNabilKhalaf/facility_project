@@ -9,7 +9,8 @@ import '../../../../../core/shared_widgets/text_field.dart';
 import '../../../../setting/presentation/views/widgets/NextActivate.dart';
 
 class PickImgFun extends StatefulWidget {
-  const PickImgFun({Key? key}) : super(key: key);
+   PickImgFun({required this.hintTxt});
+String? hintTxt;
 
   @override
   State<PickImgFun> createState() => _PickImgFunState();
@@ -28,7 +29,7 @@ class _PickImgFunState extends State<PickImgFun> {
         defaultText(
             type: TextInputType.text,
             borderWidth: 1,
-            hint: "Attach An Image",
+            hint: widget.hintTxt,
             suffix: Icons.upload_rounded,
             pressed: (){
               getImage();

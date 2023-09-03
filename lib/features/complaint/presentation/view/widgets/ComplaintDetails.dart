@@ -55,8 +55,8 @@ class ComplaintDetailsBody extends StatelessWidget {
           SizedBox(height: 10.h,),
           defaultText(type: TextInputType.text,borderWidth: .2,maxLines: 6,hint: 'Enter Complaint'),
           SizedBox(height: 10.h,),
-          PickImgFun(),
-          Spacer(),
+          PickImgFun(hintTxt: 'Attach an image',),
+          const Spacer(),
           Padding(
             padding:  EdgeInsets.only(bottom: 10.h),
             child: CustomButton(backgroundColor: kPrimaryColor, text: 'Confirm', func: (){
