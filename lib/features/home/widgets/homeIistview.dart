@@ -18,6 +18,8 @@ class _HomeListviewState extends State<HomeListview> {
     "assets/homeImages/Mask Group 83.png"
 
   ];
+
+
   List<String> texts = [
     " The point of using Lorem Ipsum is that ",
     "content here', making it look like readable English",

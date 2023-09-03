@@ -53,7 +53,9 @@ class _HomeAndServicesBodyState extends State<HomeAndServicesBody> {
                         children: [
                           GestureDetector(
                               onTap: (){Navigator.push(context, MaterialPageRoute(
-                                  builder: (context)=> const HomeNews()));},
+                                  builder: (context)=>  HomeNews(
+                                    index: index,
+                                  )));},
                               child: Padding(
                                 padding:  EdgeInsets.symmetric(horizontal: 10.w),
                                 child: Image.asset(images[index],width: 340.w,height: 150.h,fit: BoxFit.fill,),

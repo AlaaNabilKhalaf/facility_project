@@ -4,8 +4,18 @@ import '../../../constants.dart';
 import '../../News/widgets/final_news_body.dart';
 
 class HomeNews extends StatelessWidget {
-  const HomeNews({super.key});
+  HomeNews({super.key,
+   required this.index,
+ });
+final int index ;
 
+ final List<String> images = [
+   "assets/homeImages/Mask Group 8.png",
+   "assets/homeImages/Mask Group 18.png",
+   "assets/homeImages/Mask Group 82.png",
+   "assets/homeImages/Mask Group 83.png"
+
+ ];
   @override
   Widget build(BuildContext context) {
     return SafeArea(child:
@@ -14,7 +24,7 @@ class HomeNews extends StatelessWidget {
       appBar: AppBarButton2(
         text: "News Details",
       ),
-      body: const FinalNewsBody( image:'assets/homeImages/Mask Group 18.png'
+      body:  FinalNewsBody( image:images[index]
       ),
     )
     );

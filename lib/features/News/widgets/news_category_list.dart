@@ -1,5 +1,4 @@
 import 'package:facility/features/News/views/chosen_category_news.dart';
-import 'package:facility/features/News/views/the_final_news.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../core/utilies/assets.dart';

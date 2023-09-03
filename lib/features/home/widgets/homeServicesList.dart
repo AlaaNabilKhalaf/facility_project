@@ -1,6 +1,7 @@
 import 'package:facility/features/News/views/news_category.dart';
 import 'package:facility/features/home/views/moreScreen.dart';
 import 'package:facility/features/home/widgets/smallWidgets/Grid_itemServices.dart';
+import 'package:facility/features/review/view/my_reviews.dart';
 import 'package:facility/features/services_home/presentation/views/widgets/bottom_nav.dart';
 import 'package:facility/features/tasareeh/presentation/views/papers_screen.dart';
 import 'package:facility/features/tasareeh/presentation/views/widgets/durationEntry.dart';
@@ -24,7 +25,7 @@ HomeServiceList({required this.theHeight});
      const MoreScreen(),
      const MoreScreen(),
      const MoreScreen(),
-     const ReviewPage(),
+     const MyReviewsScreen(),
      const PaperScreen(paperScreenChaker: false),
      const NewsCategory(),
      const MoreScreen(),
