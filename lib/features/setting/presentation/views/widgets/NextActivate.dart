@@ -74,6 +74,7 @@ class _Next_ActivateState extends State<Next_Activate> {
 
               SizedBox(height: 110.h,),
             CustomButton(backgroundColor: kPrimaryColor, text: "Request", func: (){
+
               showDialog(context: context, builder: (context)=>Custom_Alert(widget: const HomePage(), txt: const Text("Request Submitted successfully"),
                 ),
               );

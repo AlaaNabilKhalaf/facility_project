@@ -3,6 +3,7 @@ import 'package:facility/features/home/views/moreScreen.dart';
 import 'package:facility/features/home/widgets/smallWidgets/Grid_itemServices.dart';
 import 'package:facility/features/review/view/my_reviews.dart';
 import 'package:facility/features/services_home/presentation/views/widgets/bottom_nav.dart';
+import 'package:facility/features/complaint/presentation/view/complainScreen.dart';
 import 'package:facility/features/tasareeh/presentation/views/papers_screen.dart';
 import 'package:facility/features/tasareeh/presentation/views/widgets/durationEntry.dart';
 import 'package:facility/features/tasareeh/presentation/views/widgets/tasareeh.dart';
@@ -22,7 +23,7 @@ HomeServiceList({required this.theHeight});
      const HomeView(),
      const MoreScreen(),
      const MoreScreen(),
-     const MoreScreen(),
+     const ComplainScreen(),
      const MoreScreen(),
      const MoreScreen(),
      const MyReviewsScreen(),
