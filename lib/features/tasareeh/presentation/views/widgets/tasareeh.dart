@@ -69,6 +69,7 @@ class _Tasareeh_ViewState extends State<Tasareeh_View> {
 
             SizedBox(height: 10.h,),
 
+
             Container(
               padding: const EdgeInsets.all(17),
               height: 190.h,
@@ -119,6 +120,10 @@ class _Tasareeh_ViewState extends State<Tasareeh_View> {
                 ],
               ),
             ),
+
+
+
+
 SizedBox(height: 20.h,),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 10),

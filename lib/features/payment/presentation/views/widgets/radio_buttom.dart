@@ -19,7 +19,7 @@ class _RadioCheck2State extends State<RadioCheck2> {
       padding: const EdgeInsets.symmetric(vertical: 10.0),
       child: Column(
         children: [
-          buildRadioItem(1, 'Wallet'),
+          buildRadioItem(1, 'Cash on Delivery'),
           const SizedBox(height: 20),
           buildRadioItem(2, 'Visa', expandable: true),
         ],

@@ -1,4 +1,6 @@
 import 'package:facility/features/News/views/news_category.dart';
+import 'package:facility/features/RequestServices/presentation/selectProviderScreen.dart';
+import 'package:facility/features/RequestServices/presentation/view/TimeSlotsScreen.dart';
 import 'package:facility/features/home/views/moreScreen.dart';
 import 'package:facility/features/home/widgets/smallWidgets/Grid_itemServices.dart';
 import 'package:facility/features/review/view/my_reviews.dart';
@@ -22,7 +24,7 @@ HomeServiceList({required this.theHeight});
    final List nextScreen = [
      const HomeView(),
      const MoreScreen(),
-     const MoreScreen(),
+     SelectProviderScreen(),
      const ComplainScreen(),
      const MoreScreen(),
      const MoreScreen(),
