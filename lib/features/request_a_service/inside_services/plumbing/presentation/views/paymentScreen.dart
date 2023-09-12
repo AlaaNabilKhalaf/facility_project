@@ -1,13 +1,8 @@
 import 'package:facility/core/shared_widgets/appbar2.dart';
-import 'package:facility/features/RequestServices/presentation/view/widgets/choosepayment.dart';
-import 'package:facility/features/RequestServices/presentation/view/widgets/paymentServiceBody.dart';
-import 'package:facility/features/RequestServices/presentation/view/widgets/requestDetailsContainer.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../core/utilies/styles.dart';
-import '../../../payment/presentation/views/widgets/radio_buttom.dart';
+import '../widgets/paymentServiceBody.dart';
 
 class PaymentServicesScreen extends StatelessWidget {
 

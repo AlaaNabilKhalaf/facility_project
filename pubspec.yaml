@@ -84,6 +84,8 @@ flutter:
     - assets/images/my_flat/
     - assets/icons/
     - assets/homeImages/
+    - assets/images/request_service_images/
+    - assets/images/request_service_images/plumbing_images/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

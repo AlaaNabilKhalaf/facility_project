@@ -6,8 +6,10 @@ class MoreScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: lIGHT_BACKGROUND ,
+    return const SafeArea(
+      child: Scaffold(
+        backgroundColor: lIGHT_BACKGROUND ,
+      ),
     );
   }
 }

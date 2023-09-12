@@ -1,39 +1,22 @@
-import 'package:facility/features/News/views/news_category.dart';
-import 'package:facility/features/RequestServices/presentation/selectProviderScreen.dart';
-import 'package:facility/features/RequestServices/presentation/view/TimeSlotsScreen.dart';
-import 'package:facility/features/home/views/moreScreen.dart';
+import 'package:facility/core/utilies/assets.dart';
 import 'package:facility/features/home/widgets/smallWidgets/Grid_itemServices.dart';
-import 'package:facility/features/review/view/my_reviews.dart';
-import 'package:facility/features/services_home/presentation/views/widgets/bottom_nav.dart';
-import 'package:facility/features/complaint/presentation/view/complainScreen.dart';
-import 'package:facility/features/tasareeh/presentation/views/papers_screen.dart';
-import 'package:facility/features/tasareeh/presentation/views/widgets/durationEntry.dart';
-import 'package:facility/features/tasareeh/presentation/views/widgets/tasareeh.dart';
-import 'package:facility/features/services_home/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../review/view/review_page.dart';
-import '../../setting/presentation/animation/fadeanimation.dart';
+
 
 
 
 class HomeServiceList extends StatelessWidget {
 
-HomeServiceList({required this.theHeight});
-
-   final List nextScreen = [
-     const HomeView(),
-     const MoreScreen(),
-     SelectProviderScreen(),
-     const ComplainScreen(),
-     const MoreScreen(),
-     const MoreScreen(),
-     const MyReviewsScreen(),
-     const PaperScreen(paperScreenChaker: false),
-     const NewsCategory(),
-     const MoreScreen(),
-   ];
-
+HomeServiceList({
+  super.key,
+  required this.theHeight ,
+  required this.nextScreen ,
+  required this.services ,
+  required this.images ,
+});
+final List images ;
+final List services ;
+   final List nextScreen ;
    double? theHeight;
   @override
   Widget build(BuildContext context) {
@@ -45,7 +28,7 @@ HomeServiceList({required this.theHeight});
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,childAspectRatio: 1.3
               ),
-              itemCount:10 ,
+              itemCount:nextScreen.length ,
               itemBuilder: (context , index)=>
                   Padding(
                       padding: const EdgeInsets.all(8.0),
@@ -54,7 +37,10 @@ HomeServiceList({required this.theHeight});
                             Navigator.push(context, MaterialPageRoute(builder: (context)=>nextScreen[index])
                             );
                           },
-                          child: Grid_Item_Services(index: index,))
+                          child: Grid_Item_Services(index: index,
+                              images: images,
+                              services: services,
+                          ))
                   )),
         ),
     );

@@ -1,10 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import '../../../../../constants.dart';
-import '../../../../../core/shared_widgets/custom_buttom.dart';
-import '../AdressScreen.dart';
+import '../../../../../../constants.dart';
+import '../../../../../../core/shared_widgets/custom_buttom.dart';
+import '../views/AdressScreen.dart';
 import 'RangeTimeContainer.dart';
 import 'SelectDateContainer.dart';
 
@@ -29,7 +28,7 @@ class TimeSlotsBody extends StatelessWidget {
           children: [
             SelectDateContainer(),
             SizedBox(height: 30.h,),
-            RangeTimeContainer(),
+            const RangeTimeContainer(),
             SizedBox(height: 30.h,),
             Padding(
               padding: const EdgeInsets.all(8.0),

@@ -17,7 +17,7 @@ class Search extends StatelessWidget {
           borderRadius: const BorderRadius.all(Radius.elliptical(6, 6)),
           boxShadow: [
             BoxShadow(
-              color: Colors.grey[200]!, // Set the shadow color
+              color: Colors.grey[100]!, // Set the shadow color
               spreadRadius: 10, // Set the spread radius of the shadow
               blurRadius: 10, // Set the blur radius of the shadow
               offset: const Offset(0, 3), // Set the offset of the shadow

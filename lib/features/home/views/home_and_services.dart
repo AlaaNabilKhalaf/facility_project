@@ -1,6 +1,16 @@
+import 'package:facility/core/utilies/assets.dart';
 import 'package:facility/features/home/widgets/home_and_services_body.dart';
+import 'package:facility/features/home/widgets/page_viewer_for_home.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../constants.dart';
+import '../../News/views/news_category.dart';
+import '../../complaint/presentation/view/complainScreen.dart';
+import '../../request_a_service/presentation/views/request_service_home_page.dart';
+import '../../review/view/my_reviews.dart';
+import '../../services_home/presentation/views/home_view.dart';
+import '../../tasareeh/presentation/views/papers_screen.dart';
+import 'moreScreen.dart';
 
 class HomeAndServices extends StatelessWidget {
   const HomeAndServices({super.key});
@@ -55,7 +65,36 @@ class HomeAndServices extends StatelessWidget {
             ),
           ),
         ),
-        body:  HomeAndServicesBody(),
+        body:  HomeAndServicesBody(
+          theHeight: 300.h,
+          topWidget: const PageViewerForHome(),
+          homeListViewList: const [
+            HomeView(),
+            MoreScreen(),
+            RequestServiceHomePage(),
+            ComplainScreen(),
+            MoreScreen(),
+            MoreScreen(),
+            MyReviewsScreen(),
+            PaperScreen(paperScreenChaker: false),
+            NewsCategory(),
+            MoreScreen(),
+          ],
+          widgetInServiceRow: const SizedBox(),
+          images: AssetData.homeServices1,
+          services: const [
+            "Pay a pill",
+            "Grocery Shop",
+            "Request Service",
+            "Complain",
+            "Security",
+            "Property\n management",
+            "Rating",
+            "Permission",
+            "News",
+            "Procedures",
+          ],
+        ),
       ),
     );
   }

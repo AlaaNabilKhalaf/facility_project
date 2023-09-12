@@ -15,7 +15,7 @@ class HomeView extends StatelessWidget {
         bottomNavigationBar: Padding(
           padding: const EdgeInsets.all(16.0),
           child: GestureDetector(
-            onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (context)=>PayHistoryView())),
+            onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (context)=> const PayHistoryView())),
             child: Container(
               alignment: Alignment.center,
             width: double.infinity,
@@ -24,7 +24,7 @@ class HomeView extends StatelessWidget {
                 border: Border.all(color: kPrimaryColor),
                 borderRadius: BorderRadius.circular(10),
               ),
-              child: Text("My Payment History",style: TextStyle(color: kPrimaryColor,fontSize: 20),),
+              child: const Text("My Payment History",style: TextStyle(color: kPrimaryColor,fontSize: 20),),
             ),
           ),
         ),

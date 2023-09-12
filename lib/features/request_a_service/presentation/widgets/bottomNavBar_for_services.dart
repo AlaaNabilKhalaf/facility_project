@@ -1,38 +1,31 @@
-import 'package:facility/features/home/views/home_and_services.dart';
-import 'package:flutter/material.dart';
 import 'package:dot_navigation_bar/dot_navigation_bar.dart';
+import 'package:facility/features/home/views/moreScreen.dart';
+import 'package:facility/features/request_a_service/presentation/views/request_service_home_screen.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../constants.dart';
-import '../../setting/presentation/views/setting_view.dart';
-import '../views/HomeScreen.dart';
-import '../views/discoverScreen.dart';
-import '../views/servicesScreen.dart';
+import '../../../../constants.dart';
+import '../../../home/views/HomeScreen.dart';
 
 
-class BottomNavBarForHome extends StatefulWidget {
-  const BottomNavBarForHome({super.key});
+class BottomNavBarForServices extends StatefulWidget {
+  const BottomNavBarForServices({super.key});
 
   @override
-  State<BottomNavBarForHome> createState() => _BottomNavBarState();
+  State<BottomNavBarForServices> createState() => _BottomNavBarForServicesState();
 }
 
-class _BottomNavBarState extends State<BottomNavBarForHome> with TickerProviderStateMixin {
+class _BottomNavBarForServicesState extends State<BottomNavBarForServices> with TickerProviderStateMixin {
   int currentIndex = 0;
-  final List<Widget> _tabs =  [
-    const HomeAndServices(),
-    const ServicesScreen(),
-    const DiscoverScreen(),
-    const SettingView()
+  final List<Widget> _tabs =  const [
+    RequestServiceHomeScreen(),
+    MoreScreen(),
+    MoreScreen(),
+
   ];
   Widget currentScreen = const HomeScreen();
   @override
   Widget build(BuildContext context) {
-    // var anim = AnimationController(
-    //   vsync: this,
-    //   value: 1,
-    //   duration: const Duration(milliseconds: 500),
-    // );
     return Scaffold(
       backgroundColor: lIGHT_BACKGROUND ,
       extendBody: true,
@@ -45,7 +38,7 @@ class _BottomNavBarState extends State<BottomNavBarForHome> with TickerProviderS
             BoxShadow(
               color: Colors.grey.shade400,
               blurRadius: 3,
-             // blurStyle: BlurStyle.outer
+              // blurStyle: BlurStyle.outer
             )
           ],
 
@@ -55,7 +48,7 @@ class _BottomNavBarState extends State<BottomNavBarForHome> with TickerProviderS
               currentIndex = index;
             });
           },
-         // margin: const EdgeInsets.only(left: 10, right: 10),
+          // margin: const EdgeInsets.only(left: 10, right: 10),
           // currentIndex: _SelectedTab.values.indexOf(_selectedTab),
           unselectedItemColor: Colors.grey[300],
           splashBorderRadius: 50,
@@ -64,19 +57,15 @@ class _BottomNavBarState extends State<BottomNavBarForHome> with TickerProviderS
           dotIndicatorColor: kPrimaryColor,
           items: [
             DotNavigationBarItem(
-              icon:const Icon(Icons.home),
+              icon:const Icon(Icons.home , size: 27,),
               selectedColor: kPrimaryColor,
             ),
             DotNavigationBarItem(
-              icon: const Icon(Icons.view_carousel_sharp),
+              icon: const Icon(Icons.calendar_month , size: 27,),
               selectedColor: kPrimaryColor,
             ),
             DotNavigationBarItem(
-              icon: const Icon(Icons.map),
-              selectedColor: kPrimaryColor,
-            ),
-            DotNavigationBarItem(
-              icon: const Icon(Icons.more_horiz),
+              icon: const Icon(Icons.person , size: 27,),
               selectedColor: kPrimaryColor,
             ),
           ],

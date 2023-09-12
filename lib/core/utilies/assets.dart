@@ -117,6 +117,33 @@ class AssetData {
     "assets/images/Group 859.png",
     "assets/images/vuesax-bold-1building.png",
   ] ;
+static const requestServiceHomeImages = [
+  "assets/images/request_service_images/cleaning.png",
+  "assets/images/request_service_images/Rectangle 207.png",
+  "assets/images/request_service_images/Rectangle 204.png",
+  "assets/images/request_service_images/carpenter.png",
+  "assets/images/request_service_images/plumbing.png",
+  "assets/images/request_service_images/air-conditioner.png",
+  "assets/images/request_service_images/satellite.png",
+  "assets/images/request_service_images/home-appliance.png",
+] ;
+  static const requestServiceHomeTitles = [
+    "Home Keeping",
+    "Maintenance",
+    "Electrician",
+    "Carpenter",
+    "Plumbing",
+    "AC Service",
+    "Satellite & Receiver",
+    "Home Appliance",
+  ];
 
+  static const plumbingImages = [
+    "assets/images/request_service_images/plumbing_images/Mask Group 62.png",
+    "assets/images/request_service_images/plumbing_images/Mask Group 65.png",
+    "assets/images/request_service_images/plumbing_images/Mask Group 36.png",
+    "assets/images/request_service_images/plumbing_images/Mask Group 688.png",
+    "assets/images/request_service_images/plumbing_images/Mask Group 67.png",
+  ] ;
 
 }

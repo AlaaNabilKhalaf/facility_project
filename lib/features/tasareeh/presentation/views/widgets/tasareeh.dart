@@ -101,18 +101,18 @@ class _Tasareeh_ViewState extends State<Tasareeh_View> {
                     ),
                   ),
                   SizedBox(height: 15.h,),
-                  Container(
-                    child: DatePicker(
-                      DateTime.now(),
-                      height: 80.h,
-                      width: 70,
-                      initialSelectedDate: DateTime.now(),
-                      selectionColor: kPrimaryColor,
-                      selectedTextColor: Colors.white,
-                      dateTextStyle: Styles.textStyle16,
-
-                    ),
-                  )
+                  // Container(
+                  //   child: DatePicker(
+                  //     DateTime.now(),
+                  //     height: 80.h,
+                  //     width: 70,
+                  //     initialSelectedDate: DateTime.now(),
+                  //     selectionColor: kPrimaryColor,
+                  //     selectedTextColor: Colors.white,
+                  //     dateTextStyle: Styles.textStyle16,
+                  //
+                  //   ),
+                  // )
 
 
 

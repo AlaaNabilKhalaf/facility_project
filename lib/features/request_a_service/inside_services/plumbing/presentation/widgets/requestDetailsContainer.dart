@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../../core/utilies/styles.dart';
+import '../../../../../../core/utilies/styles.dart';
+
 
 class RequestDetailsContainer extends StatelessWidget {
   const RequestDetailsContainer({

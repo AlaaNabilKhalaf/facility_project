@@ -1,12 +1,13 @@
 import 'package:facility/constants.dart';
 import 'package:facility/core/shared_widgets/appbar2.dart';
-import 'package:facility/features/RequestServices/presentation/view/paymentScreen.dart';
+import 'package:facility/features/request_a_service/inside_services/plumbing/presentation/views/paymentScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../core/shared_widgets/custom_buttom.dart';
-import '../../../../core/utilies/styles.dart';
+import '../../../../../../core/shared_widgets/custom_buttom.dart';
+import '../../../../../../core/utilies/styles.dart';
+
 
 enum FlatNumberType {Donwloadable,Deliverable}
 

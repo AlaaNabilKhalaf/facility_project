@@ -1,14 +1,7 @@
 import 'package:facility/constants.dart';
 import 'package:facility/core/shared_widgets/appbar2.dart';
-import 'package:facility/core/shared_widgets/custom_buttom.dart';
-import 'package:facility/core/shared_widgets/text_field.dart';
-import 'package:facility/core/utilies/styles.dart';
-import 'package:facility/features/RequestServices/presentation/view/TimeSlotsScreen.dart';
-import 'package:facility/features/RequestServices/presentation/view/widgets/selectproviderBody.dart';
-import 'package:facility/features/RequestServices/presentation/view/widgets/selectproviderList.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:facility/features/request_a_service/inside_services/plumbing/presentation/widgets/selectproviderBody.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SelectProviderScreen extends StatelessWidget {
 List<String> images=[
@@ -25,8 +18,12 @@ List<String> images=[
     final customWidth=MediaQuery.of(context).size.width;
     return SafeArea(
       child: Scaffold(
+        backgroundColor: lIGHT_BACKGROUND,
 appBar: AppBarButton2(text: 'Select Provider',),
-        body: SelectBroviderBody(customHeight: customHeight, images: images, customWidth: customWidth),
+        body: SelectBroviderBody(
+            customHeight: customHeight,
+            images: images,
+            customWidth: customWidth),
       ),
     );
   }

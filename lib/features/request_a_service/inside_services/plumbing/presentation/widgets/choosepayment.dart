@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../core/utilies/styles.dart';
-import '../../../../payment/presentation/views/widgets/radio_buttom.dart';
+import '../../../../../../core/utilies/styles.dart';
+import '../../../../../payment/presentation/views/widgets/radio_buttom.dart';
+
 
 class choosePaymentServiceMethod extends StatelessWidget {
   const choosePaymentServiceMethod({
