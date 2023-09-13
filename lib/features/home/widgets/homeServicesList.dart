@@ -26,7 +26,7 @@ final List services ;
           height:theHeight,
           child: GridView.builder(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,childAspectRatio: 1.3
+                crossAxisCount: 2,childAspectRatio: 1.2
               ),
               itemCount:nextScreen.length ,
               itemBuilder: (context , index)=>

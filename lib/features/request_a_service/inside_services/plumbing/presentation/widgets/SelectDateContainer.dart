@@ -59,19 +59,19 @@ class _SelectDateContainerState extends State<SelectDateContainer> {
                 )
             ),
           ),
-          // SizedBox(height: 15.h,),
-          // Container(
-          //   child: DatePicker(
-          //     DateTime.now(),
-          //     height: 80,
-          //     width: 70,
-          //     initialSelectedDate: DateTime.now(),
-          //     selectionColor: kPrimaryColor,
-          //     selectedTextColor: Colors.white,
-          //     dateTextStyle: Styles.textStyle16,
-          //
-          //   ),
-          // ),
+          SizedBox(height: 15.h,),
+          Container(
+            child: DatePicker(
+              DateTime.now(),
+              height: 80,
+              width: 70,
+              initialSelectedDate: DateTime.now(),
+              selectionColor: kPrimaryColor,
+              selectedTextColor: Colors.white,
+              dateTextStyle: Styles.textStyle16,
+
+            ),
+          ),
 
 
 

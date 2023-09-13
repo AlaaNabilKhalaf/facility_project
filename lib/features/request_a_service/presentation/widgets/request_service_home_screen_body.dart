@@ -24,7 +24,7 @@ class RequestServiceHomeScreenBody extends StatelessWidget {
                 child: Search(text: 'Search For a Service',),
               ),
               HomeAndServicesBody(
-                theHeight: 295.h,
+                theHeight: MediaQuery.of(context).size.height*.35,
                 topWidget: Padding(
                   padding: const EdgeInsets.only(top: 16 , right: 20 , left: 20),
                   child: Image.asset('assets/images/request_service_images/Group 128.png',
