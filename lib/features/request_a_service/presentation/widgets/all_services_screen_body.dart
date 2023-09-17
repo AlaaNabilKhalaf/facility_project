@@ -27,7 +27,7 @@ class AllServicesScreenBody  extends StatelessWidget {
                 theHeight: 530.h,
                 images: AssetData.requestServiceHomeImages,
                 services: AssetData.requestServiceHomeTitles,
-                nextScreen : [
+                nextScreen : const [
                   MoreScreen(),
                   MoreScreen(),
                   MoreScreen(),

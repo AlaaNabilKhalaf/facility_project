@@ -6,6 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../constants.dart';
 import '../../../home/views/HomeScreen.dart';
+import '../../booking/views/booking_page.dart';
 
 
 class BottomNavBarForServices extends StatefulWidget {
@@ -19,7 +20,7 @@ class _BottomNavBarForServicesState extends State<BottomNavBarForServices> with 
   int currentIndex = 0;
   final List<Widget> _tabs =  const [
     RequestServiceHomeScreen(),
-    MoreScreen(),
+    BookingPage(),
     MoreScreen(),
 
   ];
