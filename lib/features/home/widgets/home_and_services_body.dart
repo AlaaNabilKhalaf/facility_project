@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'homeServicesList.dart';
 
-class HomeAndServicesBody extends StatefulWidget {
+class HomeAndServicesBody extends StatelessWidget {
   final Widget topWidget ;
   final Widget widgetInServiceRow ;
   final List homeListViewList ;
@@ -20,19 +20,12 @@ class HomeAndServicesBody extends StatefulWidget {
   });
 
   @override
-  State<HomeAndServicesBody> createState() => _HomeAndServicesBodyState();
-}
-
-class _HomeAndServicesBodyState extends State<HomeAndServicesBody> {
-
-
-  @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          widget.topWidget,
+          topWidget,
            SizedBox(height: 20.h,),
        Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20,),
@@ -43,20 +36,21 @@ class _HomeAndServicesBodyState extends State<HomeAndServicesBody> {
                   style: TextStyle(
                       fontSize: 20
                   ),),
-                widget.widgetInServiceRow
+                widgetInServiceRow
               ],
             ),
           ),
           HomeServiceList(
-            theHeight: widget.theHeight,
-          nextScreen: widget.homeListViewList,
-            images: widget.images,
-            services: widget.services),
+            theHeight: theHeight,
+          nextScreen: homeListViewList,
+            images: images,
+            services: services),
         ],
       ),
     );
   }
 }
+
 //WormEffect(
 //
 //             spacing:  8.0,

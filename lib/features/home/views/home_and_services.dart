@@ -1,6 +1,7 @@
 import 'package:facility/core/utilies/assets.dart';
 import 'package:facility/features/home/widgets/home_and_services_body.dart';
 import 'package:facility/features/home/widgets/page_viewer_for_home.dart';
+import 'package:facility/features/services_home/presentation/views/bottomNav.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../constants.dart';
@@ -68,17 +69,17 @@ class HomeAndServices extends StatelessWidget {
         body:  HomeAndServicesBody(
           theHeight: 300.h,
           topWidget: const PageViewerForHome(),
-          homeListViewList: const [
-            HomeView(),
-            MoreScreen(),
-            RequestServiceHomePage(),
-            ComplainScreen(),
-            MoreScreen(),
-            MoreScreen(),
-            MyReviewsScreen(),
-            PaperScreen(paperScreenChaker: false),
-            NewsCategory(),
-            MoreScreen(),
+          homeListViewList:  [
+            PayBottomNav(),
+            const MoreScreen(),
+            const RequestServiceHomePage(),
+            const ComplainScreen(),
+            const MoreScreen(),
+            const MoreScreen(),
+            const MyReviewsScreen(),
+            const PaperScreen(paperScreenChaker: false),
+            const NewsCategory(),
+            const MoreScreen(),
           ],
           widgetInServiceRow: const SizedBox(),
           images: AssetData.homeServices1,

@@ -27,80 +27,82 @@ class _HomeBodyState extends State<HomeBody> {
         SliverToBoxAdapter(
        child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0,vertical: 16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children:  [
-              const Search(
-                text: 'Search for service, offer',
-              ),
-              // SizedBox(
-              //   height: 10,
-              // ),
-              const ImageStack(),
-              const SizedBox(
-                height: 10,
-              ),
-              Text(
-                'My Flats',
-                style: Styles.textStyle15.copyWith(fontSize: 20, color: Colors.black,),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              ListFlat(),
-              const SizedBox(
-                height: 30,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    'Our Services',
-                    style: Styles.textStyle15.copyWith(fontSize: 20 , color: Colors.black),
-                  ),
-                  GestureDetector(
-                    onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>ServicesView()));
-                    },
-                    child: Text(
-                      'See all',
-                      style: Styles.textStyle15.copyWith( color: Colors.black),
+          child: SizedBox(
+            height: MediaQuery.of(context).size.height*.75,
+            child: ListView(
+              children:  [
+                const Search(
+                  text: 'Search for service, offer',
+                ),
+                // SizedBox(
+                //   height: 10,
+                // ),
+                const ImageStack(),
+                const SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  'My Flats',
+                  style: Styles.textStyle15.copyWith(fontSize: 20, color: Colors.black,),
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                ListFlat(),
+                const SizedBox(
+                  height: 30,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Our Services',
+                      style: Styles.textStyle15.copyWith(fontSize: 20 , color: Colors.black),
                     ),
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              ServiceList(),
-              const SizedBox(
-                height: 30,
-              ),
-              // Text(
-              //   'Our Sponsors',
-              //   style: Styles.textStyle15.copyWith(fontSize: 20 , color: Colors.black),
-              // ),
-              // SizedBox(
-              //   height: 10,
-              // ),
-              // Padding(
-              //   padding: EdgeInsets.symmetric(horizontal: 30),
-              //   child: AspectRatio(
-              //     aspectRatio: 2.3/1,
-              //     child: SponsersList(
-              //     ),
-              //   ),
-              // ),
-              // SponsersList(),
-              const Text(
-                "Our Sponsers",
-                style: Styles.textStyle20,
-              ),
-              SizedBox(
-                height: MediaQuery.of(context).size.height / 9,
-                child: const SponsersList(),
-              ),
-            ],
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>ServicesView()));
+                      },
+                      child: Text(
+                        'See all',
+                        style: Styles.textStyle15.copyWith( color: Colors.black),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                ServiceList(),
+                const SizedBox(
+                  height: 30,
+                ),
+                // Text(
+                //   'Our Sponsors',
+                //   style: Styles.textStyle15.copyWith(fontSize: 20 , color: Colors.black),
+                // ),
+                // SizedBox(
+                //   height: 10,
+                // ),
+                // Padding(
+                //   padding: EdgeInsets.symmetric(horizontal: 30),
+                //   child: AspectRatio(
+                //     aspectRatio: 2.3/1,
+                //     child: SponsersList(
+                //     ),
+                //   ),
+                // ),
+                // SponsersList(),
+                const Text(
+                  "Our Sponsers",
+                  style: Styles.textStyle20,
+                ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height / 9,
+                  child: const SponsersList(),
+                ),
+              ],
+            ),
           ),
         ),
         ),

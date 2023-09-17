@@ -17,12 +17,12 @@ class _HistoryBodyState extends State<HistoryBody> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 8.0 , vertical: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 8.0 , vertical: 10),
         child: Column(
           children: [
             const Search(text: 'Search for a specific payment'),
             SizedBox(
-                height: MediaQuery.of(context).size.height*.7, child: ListPay()),
+                height: MediaQuery.of(context).size.height*.62, child: ListPay()),
             Container(
               width: double.infinity,
               height: MediaQuery.of(context).size.height/16,
