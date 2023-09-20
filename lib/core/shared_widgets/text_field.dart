@@ -18,6 +18,7 @@ void Function()?  onTab,
   // double? borderWidth,
   int?maxLines,
   double borderWidth = 1.0,
+  Color? FillColor
 }) => TextFormField(
 
   minLines: maxLines,
@@ -26,6 +27,8 @@ void Function()?  onTab,
   obscureText: isObscure,
 
   decoration:  InputDecoration(
+    fillColor: FillColor,
+
     hintText: hint,
     prefixIcon: prefixImageAsset != null // Use prefixImageAsset to conditionally show the image
         ? Image.asset(
@@ -64,4 +67,5 @@ void Function()?  onTab,
   onTap: onTab,
   validator: validate,
   maxLines: lines ,
+
 );

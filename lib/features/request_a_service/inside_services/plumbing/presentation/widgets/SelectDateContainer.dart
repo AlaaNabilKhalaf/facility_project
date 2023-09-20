@@ -1,3 +1,4 @@
+import 'package:date_picker_timeline/date_picker_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -60,17 +61,15 @@ class _SelectDateContainerState extends State<SelectDateContainer> {
             ),
           ),
           SizedBox(height: 15.h,),
-          Container(
-            // child: DatePicker(
-            //   DateTime.now(),
-            //   height: 80,
-            //   width: 70,
-            //   initialSelectedDate: DateTime.now(),
-            //   selectionColor: kPrimaryColor,
-            //   selectedTextColor: Colors.white,
-            //   dateTextStyle: Styles.textStyle16,
-            //
-            // ),
+          DatePicker(
+            DateTime.now(),
+            height: 80,
+            width: 70,
+            initialSelectedDate: DateTime.now(),
+            selectionColor: kPrimaryColor,
+            selectedTextColor: Colors.white,
+            dateTextStyle: Styles.textStyle16,
+
           ),
 
 

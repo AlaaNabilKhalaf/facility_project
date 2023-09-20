@@ -8,6 +8,7 @@ import '../../News/views/news_category.dart';
 import '../../complaint/presentation/view/complainScreen.dart';
 import '../../request_a_service/presentation/views/request_service_home_page.dart';
 import '../../review/view/my_reviews.dart';
+import '../../services_home/presentation/views/bottomNavhomeView.dart';
 import '../../services_home/presentation/views/home_view.dart';
 import '../../tasareeh/presentation/views/papers_screen.dart';
 import '../widgets/appBarForHomePage.dart';
@@ -25,7 +26,7 @@ class ServicesScreen extends StatelessWidget {
       body: HomeServiceList (
         theHeight: 510.h,
         nextScreen: const [
-          HomeView(),
+          BottomNavHomeView(),
           MoreScreen(),
           RequestServiceHomePage(),
           ComplainScreen(),
