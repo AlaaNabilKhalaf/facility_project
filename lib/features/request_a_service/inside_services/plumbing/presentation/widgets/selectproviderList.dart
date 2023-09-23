@@ -44,7 +44,8 @@ final List<bool> checkers =
       child: ListView.separated(
           physics: const NeverScrollableScrollPhysics(),
           shrinkWrap: true,
-          itemBuilder: (context,index){
+          itemBuilder: (context,index)
+          {
         return Container(
           padding: const EdgeInsets.all(10),
           height: widget.customHeight!*.13,

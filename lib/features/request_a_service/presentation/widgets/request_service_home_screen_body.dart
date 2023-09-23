@@ -1,5 +1,6 @@
 import 'package:facility/core/utilies/assets.dart';
 import 'package:facility/features/home/views/moreScreen.dart';
+import 'package:facility/features/request_a_service/inside_services/maintenance/presentation/views/maintenance_page.dart';
 import 'package:facility/features/request_a_service/inside_services/plumbing/presentation/views/plumbing_page.dart';
 import 'package:facility/features/request_a_service/presentation/views/all_servecies_screen.dart';
 import 'package:flutter/cupertino.dart';
@@ -7,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../home/widgets/home_and_services_body.dart';
 import '../../../services_home/presentation/views/widgets/search.dart';
+import '../../inside_services/home_keeping/presentation/views/home_keeping_page.dart';
 
 class RequestServiceHomeScreenBody extends StatelessWidget {
   const RequestServiceHomeScreenBody({super.key});
@@ -42,8 +44,8 @@ class RequestServiceHomeScreenBody extends StatelessWidget {
                 images: AssetData.requestServiceHomeImages,
                 services: AssetData.requestServiceHomeTitles,
                 homeListViewList: const [
-                  MoreScreen(),
-                  MoreScreen(),
+                  HomeKeepingPage(),
+                  MaintenancePage(),
                   MoreScreen(),
                   MoreScreen(),
                   PlumbingPage(),

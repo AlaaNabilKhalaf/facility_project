@@ -41,7 +41,6 @@ dependencies:
   wave_transition: ^0.0.6
   flutter_date_pickers:
   intl:
-  date_picker_timeline:
   rflutter_alert:
   flutter_rating_bar:
   image_picker: ^1.0.2
@@ -53,6 +52,7 @@ dependencies:
   smooth_page_indicator: ^1.1.0
   dot_navigation_bar: ^1.0.2
   carousel_slider:
+  date_picker_timeline: ^1.2.5
 dev_dependencies:
   flutter_test:
     sdk: flutter
